@@ -2,25 +2,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f6f8;
-    color: #333;
 }
 
 section {
-    padding: 60px 20px;
-    text-align: center;
-    margin: 0 auto;
+    padding: 50px;
     max-width: 900px;
+    margin: auto;
 }
 
 .hero {
-    background-color: #1e3a8a;
-    color: white;
+    text-align: center;
+    background: #f0f0f0;
     padding: 100px 20px;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 50px;
     margin-bottom: 10px;
 }
 
@@ -29,36 +26,24 @@ section {
     margin-bottom: 20px;
 }
 
-.hero .buttons a {
+.buttons a {
     display: inline-block;
-    margin: 5px 10px;
+    margin: 5px;
     padding: 10px 20px;
-    background-color: white;
-    color: #1e3a8a;
+    background: #0070f3;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
 }
 
-.about, .skills, .projects, .experience, .honors, .contact {
-    background: white;
-    margin: 20px auto;
-    border-radius: 8px;
-    padding: 40px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.buttons a:hover {
+    background: #005bb5;
 }
 
-.skills ul, .experience ul, .honors ul {
-    list-style: none;
-    padding: 0;
+h2 {
+    color: #0070f3;
 }
 
-.skills li, .experience li, .honors li {
-    margin: 10px 0;
-    text-align: left;
-}
-
-.project {
-    margin-bottom: 20px;
-    text-align: left;
+.project, .experience ul, .honors ul {
+    margin: 20px 0;
 }
