@@ -8,13 +8,13 @@
 </head>
 <body>
 
-<!-- HERO -->
+<!-- HERO SECTION -->
 <section class="hero">
-    <img src="gurjeet_photo.jpeg" alt="Gurjeet Kaur" class="profile-photo">
+    <img src="gurjeet_photo.jpg" alt="Gurjeet Kaur" class="profile-photo">
     <h1>Gurjeet Kaur</h1>
     <p class="tagline">
-        Master’s Student in Computer Science at NYU | 
-        Gold Medalist in Mathematics & Computing | 
+        Master’s Student in Computer Science at NYU |
+        Gold Medalist in Mathematics & Computing |
         Machine Learning • Optimization • AI Systems
     </p>
 
@@ -31,16 +31,20 @@
 <section class="section">
     <h2>About</h2>
     <p>
-        I am currently pursuing a Master’s in Computer Science at New York University, building upon my academic foundation as a Gold Medalist in Mathematics and Computing.
-        My work focuses on machine learning, optimization algorithms, and scalable AI systems.
+        I am currently pursuing a Master’s in Computer Science at New York University,
+        building upon my academic foundation as a Gold Medalist in Mathematics and Computing.
+        My work focuses on scalable machine learning systems, optimization algorithms,
+        and real-world AI deployment.
     </p>
     <p>
-        I have developed predictive models using ensemble methods, implemented large-scale data mining pipelines,
-        and designed mathematical optimization frameworks for real-world applications in energy, finance, and supply chain systems.
+        I have developed predictive models using ensemble techniques, implemented
+        large-scale data mining pipelines, and designed mathematical optimization frameworks
+        applied to finance, energy systems, and supply chain networks.
     </p>
     <p>
-        My technical expertise includes Python, C++, SQL, MATLAB, and modern ML frameworks such as PyTorch, TensorFlow, and Scikit-learn.
-        I am particularly interested in large language models, prompt engineering, and reliable AI deployment.
+        My technical expertise includes Python, C++, SQL, MATLAB, PyTorch,
+        TensorFlow, and Scikit-learn. I am particularly interested in
+        large language models, prompt engineering, and reliable AI systems.
     </p>
 </section>
 
@@ -74,28 +78,36 @@
     <div class="card">
         <h3>Scaling Laws in Symbolic Music Modeling</h3>
         <p>
-            Trained Transformer and LSTM architectures (3M → 100M+ parameters) on a 143M-token dataset.
-            Demonstrated empirical scaling behavior with improved perplexity using PyTorch.
+            Trained Transformer and LSTM architectures (3M → 100M+ parameters)
+            on a 143M-token dataset. Demonstrated empirical scaling behavior
+            with improved perplexity using PyTorch.
         </p>
-        <a href="https://github.com/gurjeetkaur0005/music_scaling_laws" target="_blank">View on GitHub</a>
+        <a href="https://github.com/gurjeetkaur0005/music_scaling_laws" target="_blank">
+            View on GitHub
+        </a>
     </div>
 
     <div class="card">
         <h3>Market Basket Analysis – FP-Growth</h3>
         <p>
-            Applied PySpark FP-Growth on 1.1M+ transactions to extract high-confidence association rules
-            for scalable recommendation insights.
+            Applied PySpark FP-Growth on 1.1M+ transactions to extract
+            high-confidence association rules for scalable recommendation insights.
         </p>
-        <a href="https://github.com/gurjeetkaur0005/fp-growth-online-retail" target="_blank">View on GitHub</a>
+        <a href="https://github.com/gurjeetkaur0005/fp-growth-online-retail" target="_blank">
+            View on GitHub
+        </a>
     </div>
 
     <div class="card">
         <h3>Bilevel Integer Quadratic Programming</h3>
         <p>
-            Developed a generalized MATLAB framework for solving linear and quadratic bilevel integer programming problems
-            with applications in transportation and energy optimization.
+            Developed a MATLAB framework for solving linear and quadratic
+            bilevel integer programming problems with applications in
+            transportation and energy optimization.
         </p>
-        <a href="Gurjeetkaur_Dessertation.pdf" target="_blank">View Dissertation</a>
+        <a href="Gurjeetkaur_Dessertation.pdf" target="_blank">
+            View Dissertation
+        </a>
     </div>
 </section>
 
@@ -107,12 +119,11 @@
         <p>
             Built financial analytics dashboards using Python and Streamlit.
             Automated Excel workflows improving reporting efficiency by 30%.
-            Designed preprocessing pipelines for reliable financial insights.
+            Designed preprocessing pipelines for structured financial data analysis.
         </p>
     </div>
 </section>
 
-<!-- HONORS -->
 <!-- HONORS -->
 <section class="section">
     <h2>Honors & Distinctions</h2>
@@ -120,8 +131,11 @@
     <div class="card">
         <h3>Institute Medal – First Rank</h3>
         <p>M.Sc. Mathematics & Computing</p>
-        <p>Awarded for securing First Position in the graduating class.</p>
-        <button onclick="openModal('institute_medal.jpg')" class="view-btn">
+        <p>
+            Awarded for securing First Position in the graduating class,
+            recognizing academic excellence.
+        </p>
+        <button class="view-btn" onclick="openModal('institute_medal.jpg')">
             View Certificate
         </button>
     </div>
@@ -129,12 +143,15 @@
     <div class="card">
         <h3>Certificate of Merit – First Rank</h3>
         <p>Thapar Institute of Engineering and Technology</p>
-        <p>Recognized for academic excellence and overall performance.</p>
-        <button onclick="openModal('certificate_of_merit.jpg')" class="view-btn">
+        <p>
+            Recognized for outstanding academic performance and excellence.
+        </p>
+        <button class="view-btn" onclick="openModal('certificate_of_merit.jpg')">
             View Certificate
         </button>
     </div>
 </section>
+
 <!-- CONTACT -->
 <section class="section contact">
     <h2>Contact</h2>
@@ -144,19 +161,28 @@
 </section>
 
 <!-- MODAL -->
-<div id="imageModal" class="modal" onclick="closeModal()">
-    <span class="close">&times;</span>
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
     <img class="modal-content" id="modalImage">
 </div>
 
 <script>
 function openModal(src) {
-    document.getElementById("imageModal").style.display = "block";
-    document.getElementById("modalImage").src = src;
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    modal.style.display = "flex";
+    modalImg.src = src;
 }
 
 function closeModal() {
     document.getElementById("imageModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById("imageModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
 </script>
 
