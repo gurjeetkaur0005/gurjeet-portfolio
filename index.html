@@ -2,586 +2,386 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Portfolio of Gurjeet Kaur, an NYU computer science master's student specializing in machine learning, optimization, cloud computing, and AI systems."
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Gurjeet Kaur, an NYU computer science master's student specializing in machine learning, optimization, cloud computing, and AI systems.">
     <title>Gurjeet Kaur | Software Engineering, AI & Machine Learning</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- HERO SECTION -->
-<header class="hero">
-    <img
-        src="gurjeet_photo.jpeg"
-        alt="Portrait of Gurjeet Kaur"
-        class="profile-photo"
-    >
+<nav class="nav">
+    <a href="#top" class="nav-mark">GK</a>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <a href="gurjeet_resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume">Resume</a>
+</nav>
 
-    <h1>Gurjeet Kaur</h1>
+<!-- HERO -->
+<header class="hero" id="top">
+    <div class="hero-inner">
+        <div class="hero-copy">
+            <p class="eyebrow">M.S. Computer Science &middot; NYU Tandon</p>
+            <h1>Gurjeet Kaur</h1>
+            <p class="hero-role">Software Engineer &mdash; Machine Learning, Optimization &amp; Cloud Systems</p>
+            <p class="hero-value">I build systems that make decisions under constraints: rebalancing portfolios, scaling language models, and routing data through serverless pipelines &mdash; with the math to know why they work.</p>
 
-    <p class="tagline">
-        M.S. Computer Science Student at NYU |
-        Gold Medalist in Mathematics &amp; Computing |
-        Software Engineering • Machine Learning • Cloud • Optimization
-    </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="gurjeet_resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Download Resume</a>
+            </div>
 
-    <div class="buttons">
-        <a href="#projects">Projects</a>
+            <div class="hero-links">
+                <a href="https://github.com/gurjeetkaur0005" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/gurjeetkaur11/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:gk2845@nyu.edu">Email</a>
+                <a href="GurjeetKaur_Dissertation.pdf" target="_blank" rel="noopener noreferrer">Dissertation</a>
+            </div>
+        </div>
 
-        <a
-            href="gurjeet_resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Resume
-        </a>
-
-        <a
-            href="GurjeetKaur_Dissertation.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Dissertation
-        </a>
-
-        <a
-            href="https://github.com/gurjeetkaur0005"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            GitHub
-        </a>
-
-        <a
-            href="https://www.linkedin.com/in/gurjeetkaur11/"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            LinkedIn
-        </a>
+        <div class="hero-visual">
+            <img src="gurjeet_photo.jpeg" alt="Portrait of Gurjeet Kaur" class="profile-photo">
+            <div class="converge-card">
+                <svg class="converge-svg" viewBox="0 0 320 120" preserveAspectRatio="none" aria-hidden="true">
+                    <line x1="0" y1="100" x2="320" y2="100" class="converge-axis"></line>
+                    <path id="convergePath" d="M0,20 C40,55 60,70 90,82 C130,96 160,98 200,99 C240,99.6 280,99.8 320,99.9"
+                          fill="none" stroke="url(#convergeGrad)" stroke-width="2.5" stroke-linecap="round" />
+                    <defs>
+                        <linearGradient id="convergeGrad" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#7C3AED"/>
+                            <stop offset="100%" stop-color="#2563EB"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <p class="converge-caption">loss / drift &rarr; converges under constraint</p>
+            </div>
+        </div>
     </div>
 </header>
-
 
 <main>
 
 <!-- ABOUT -->
 <section class="section" id="about">
-    <h2>About</h2>
-
-    <p>
-        I am pursuing a Master of Science in Computer Science at New York
-        University, where I focus on machine learning, cloud computing,
-        data engineering, information visualization, and software development.
-        I previously earned an M.Sc. in Mathematics and Computing from Thapar
-        Institute of Engineering and Technology, graduating with first rank
-        and receiving the Institute Medal.
-    </p>
-
-    <p>
-        My work combines software engineering, artificial intelligence,
-        mathematical optimization, and scalable cloud systems. I have built
-        an AI-powered portfolio rebalancing platform, trained Transformer and
-        LSTM models on a 143-million-token symbolic music dataset, developed
-        serverless applications on AWS, deployed containerized applications
-        on Kubernetes, and created interactive data visualizations using
-        D3.js and Observable.
-    </p>
-
-    <p>
-        I am interested in software engineering, AI and machine learning,
-        backend development, cloud infrastructure, optimization, and
-        data-intensive systems.
-    </p>
+    <p class="section-eyebrow">About</p>
+    <div class="about-grid">
+        <p class="about-lead">
+            I'm pursuing an M.S. in Computer Science at NYU, focused on machine learning,
+            cloud computing, data engineering, and information visualization. I previously
+            earned an M.Sc. in Mathematics and Computing from Thapar Institute of Engineering
+            and Technology, graduating first in class with the Institute Medal.
+        </p>
+        <p class="about-body">
+            My work sits at the intersection of software engineering, applied AI, mathematical
+            optimization, and scalable cloud systems: an AI-powered portfolio rebalancing
+            platform, Transformer and LSTM models trained on a 143M-token symbolic music
+            corpus, serverless applications on AWS, containerized deployments on Kubernetes,
+            and interactive data visualizations built with D3.js and Observable.
+        </p>
+    </div>
 </section>
 
+<!-- PROJECTS -->
+<section class="section" id="projects">
+    <p class="section-eyebrow">Selected Work</p>
 
-<!-- SKILLS -->
-<section class="section" id="skills">
-    <h2>Technical Skills</h2>
+    <div class="projects-grid">
 
-    <div class="skills-grid">
+        <!-- FLAGSHIP 1 -->
+        <article class="project-card project-card--flagship">
+            <div class="project-tag">OPT / AGENTIC AI</div>
+            <h3>Agentic AI Autonomous Portfolio Rebalancing Platform</h3>
+            <p class="project-summary">An AI-powered platform that automates portfolio drift monitoring, tax-aware trade optimization, and explainable rebalancing decisions.</p>
+            <div class="project-detail">
+                <div>
+                    <span class="detail-label">Problem</span>
+                    <p>Manual portfolio rebalancing is slow, hard to explain to a compliance reviewer, and easy to get wrong under tax constraints.</p>
+                </div>
+                <div>
+                    <span class="detail-label">Solution</span>
+                    <p>A modular trade execution pipeline combining constraint-based optimization, automated compliance explanations, audit logging, and human-approval workflows.</p>
+                </div>
+            </div>
+            <div class="project-stack">
+                <span>Python</span><span>Pandas</span><span>NumPy</span><span>CVXPY</span><span>LangChain</span><span>CrewAI</span><span>Pytest</span>
+            </div>
+            <a href="https://github.com/gurjeetkaur0005/portfolio-intelligence-platform" target="_blank" rel="noopener noreferrer" class="project-link">View repository &rarr;</a>
+        </article>
 
-        <div>
-            <h3>Programming Languages</h3>
-            <p>Python, C++, SQL, JavaScript, MATLAB</p>
-        </div>
+        <!-- FLAGSHIP 2 -->
+        <article class="project-card project-card--flagship">
+            <div class="project-tag">ML / SCALING LAWS</div>
+            <h3>Scaling Laws in Symbolic Music Modeling</h3>
+            <p class="project-summary">Trained Transformer and LSTM models across a range of parameter counts to study scaling behavior in symbolic music generation.</p>
+            <div class="project-detail">
+                <div>
+                    <span class="detail-label">Problem</span>
+                    <p>Scaling laws are well studied in text, far less so in symbolic music, where token structure and vocabulary differ sharply from natural language.</p>
+                </div>
+                <div>
+                    <span class="detail-label">Solution</span>
+                    <p>Systematic experimentation across model sizes from ~3M to 100M+ parameters on a 143M-token ABC-notation corpus derived from 178K MIDI files.</p>
+                </div>
+            </div>
+            <div class="project-metrics">
+                <div><span class="metric-num">2.22</span><span class="metric-label">test loss</span></div>
+                <div><span class="metric-num">9.20</span><span class="metric-label">perplexity</span></div>
+                <div><span class="metric-num">143M</span><span class="metric-label">tokens</span></div>
+            </div>
+            <div class="project-stack">
+                <span>Python</span><span>PyTorch</span><span>Transformers</span><span>LSTM</span>
+            </div>
+            <a href="https://github.com/gurjeetkaur0005/music_scaling_laws" target="_blank" rel="noopener noreferrer" class="project-link">View repository &rarr;</a>
+        </article>
 
-        <div>
-            <h3>Machine Learning &amp; AI</h3>
-            <p>
-                PyTorch, TensorFlow, Scikit-learn, Transformers,
-                XGBoost, LangChain, CrewAI
-            </p>
-        </div>
+        <!-- SMART PHOTO SEARCH -->
+        <article class="project-card">
+            <div class="project-tag">CLOUD</div>
+            <h3>Smart Photo Search</h3>
+            <p class="project-summary">Serverless natural-language image search built on AWS, with an event-driven indexing pipeline.</p>
+            <div class="project-stack">
+                <span>S3</span><span>Lambda</span><span>API Gateway</span><span>Rekognition</span><span>OpenSearch</span><span>Lex</span>
+            </div>
+            <a href="https://github.com/gurjeetkaur0005/smart-photo-search-aws" target="_blank" rel="noopener noreferrer" class="project-link">View repository &rarr;</a>
+        </article>
 
-        <div>
-            <h3>Data Science, Visualization &amp; Optimization</h3>
-            <p>
-                Pandas, NumPy, SciPy, PySpark, CVXPY, Matplotlib,
-                Plotly, D3.js, Observable
-            </p>
-        </div>
+        <!-- DINING CONCIERGE -->
+        <article class="project-card">
+            <div class="project-tag">CLOUD</div>
+            <h3>Dining Concierge Chatbot</h3>
+            <p class="project-summary">A serverless conversational chatbot for restaurant recommendations, with async notification via SQS and SES.</p>
+            <div class="project-stack">
+                <span>Lambda</span><span>API Gateway</span><span>Lex</span><span>DynamoDB</span><span>OpenSearch</span><span>SQS</span><span>SES</span>
+            </div>
+            <a href="https://github.com/gurjeetkaur0005/dining-chatbot" target="_blank" rel="noopener noreferrer" class="project-link">View repository &rarr;</a>
+        </article>
 
-        <div>
-            <h3>Backend Development</h3>
-            <p>FastAPI, Flask, REST APIs</p>
-        </div>
+        <!-- NYC VIZ -->
+        <article class="project-card">
+            <div class="project-tag">DATA / VIZ</div>
+            <h3>How NYC Feels</h3>
+            <p class="project-summary">An interactive urban analytics platform analyzing neighborhood character across 190+ NYC Neighborhood Tabulation Areas.</p>
+            <div class="project-metrics">
+                <div><span class="metric-num">190+</span><span class="metric-label">NTAs analyzed</span></div>
+                <div><span class="metric-num">6</span><span class="metric-label">D3 visualizations</span></div>
+            </div>
+            <div class="project-stack">
+                <span>JavaScript</span><span>D3.js</span><span>Observable</span><span>NYC Open Data</span>
+            </div>
+        </article>
 
-        <div>
-            <h3>Cloud &amp; DevOps</h3>
-            <p>
-                AWS Lambda, API Gateway, S3, DynamoDB, Lex,
-                Rekognition, OpenSearch, SQS, SES, Docker,
-                Kubernetes, Prometheus
-            </p>
-        </div>
+        <!-- K8S -->
+        <article class="project-card">
+            <div class="project-tag">CLOUD / DEVOPS</div>
+            <h3>To-Do Web Application Deployment</h3>
+            <p class="project-summary">A containerized Flask + MongoDB app deployed to Kubernetes and AWS EKS with rolling updates and health probes.</p>
+            <div class="project-stack">
+                <span>Flask</span><span>MongoDB</span><span>Docker</span><span>Kubernetes</span><span>AWS EKS</span><span>Prometheus</span>
+            </div>
+        </article>
 
-        <div>
-            <h3>Databases</h3>
-            <p>PostgreSQL, MySQL, MongoDB</p>
-        </div>
+        <!-- MARKET BASKET -->
+        <article class="project-card">
+            <div class="project-tag">DATA</div>
+            <h3>Online Retail Market Basket Analysis</h3>
+            <p class="project-summary">FP-Growth association-rule mining over large-scale retail transaction data.</p>
+            <div class="project-metrics">
+                <div><span class="metric-num">1.1M+</span><span class="metric-label">transactions</span></div>
+                <div><span class="metric-num">240+</span><span class="metric-label">rules found</span></div>
+            </div>
+            <div class="project-stack">
+                <span>Python</span><span>PySpark</span><span>FP-Growth</span>
+            </div>
+            <a href="https://github.com/gurjeetkaur0005/fp-growth-online-retail" target="_blank" rel="noopener noreferrer" class="project-link">View repository &rarr;</a>
+        </article>
 
-        <div>
-            <h3>Developer Tools</h3>
-            <p>
-                Git, GitHub, GitHub Actions, Pytest, Jupyter Notebook
-            </p>
-        </div>
+        <!-- DISSERTATION -->
+        <article class="project-card">
+            <div class="project-tag">OPT / RESEARCH</div>
+            <h3>Bilevel Integer Quadratic Programming</h3>
+            <p class="project-summary">A generalized MATLAB algorithm for bilevel integer quadratic programs, with applications in transportation and energy optimization.</p>
+            <div class="project-stack">
+                <span>MATLAB</span><span>Mathematical Optimization</span>
+            </div>
+            <a href="GurjeetKaur_Dissertation.pdf" target="_blank" rel="noopener noreferrer" class="project-link">View dissertation &rarr;</a>
+        </article>
 
     </div>
 </section>
 
+<!-- SKILLS -->
+<section class="section" id="skills">
+    <p class="section-eyebrow">Technical Skills</p>
+    <div class="skills-grid">
+        <div class="skill-block">
+            <h3>Languages</h3>
+            <p>Python &middot; C++ &middot; SQL &middot; JavaScript &middot; MATLAB</p>
+        </div>
+        <div class="skill-block">
+            <h3>Machine Learning &amp; AI</h3>
+            <p>PyTorch &middot; TensorFlow &middot; Scikit-learn &middot; Transformers &middot; XGBoost &middot; LangChain &middot; CrewAI</p>
+        </div>
+        <div class="skill-block">
+            <h3>Data, Viz &amp; Optimization</h3>
+            <p>Pandas &middot; NumPy &middot; SciPy &middot; PySpark &middot; CVXPY &middot; Matplotlib &middot; Plotly &middot; D3.js &middot; Observable</p>
+        </div>
+        <div class="skill-block">
+            <h3>Backend</h3>
+            <p>FastAPI &middot; Flask &middot; REST APIs</p>
+        </div>
+        <div class="skill-block">
+            <h3>Cloud &amp; DevOps</h3>
+            <p>AWS Lambda &middot; API Gateway &middot; S3 &middot; DynamoDB &middot; Lex &middot; Rekognition &middot; OpenSearch &middot; SQS &middot; SES &middot; Docker &middot; Kubernetes &middot; Prometheus</p>
+        </div>
+        <div class="skill-block">
+            <h3>Databases</h3>
+            <p>PostgreSQL &middot; MySQL &middot; MongoDB</p>
+        </div>
+        <div class="skill-block">
+            <h3>Developer Tools</h3>
+            <p>Git &middot; GitHub Actions &middot; Pytest &middot; Jupyter</p>
+        </div>
+    </div>
+</section>
 
 <!-- EXPERIENCE -->
 <section class="section" id="experience">
-    <h2>Work Experience</h2>
-
-    <article class="card">
-        <h3>IT Intern — iEminence Inc.</h3>
-        <p class="card-subtitle">February 2025 – July 2025</p>
-
-        <ul>
-            <li>
-                Engineered an interactive financial analytics dashboard
-                using Python, Streamlit, Pandas, and Matplotlib, reducing
-                reporting cycle time by 30% through automated profit-and-loss
-                reporting, cash-flow analysis, and KPI visualizations.
-            </li>
-
-            <li>
-                Automated Excel reporting and validation workflows across
-                more than five multi-sheet financial datasets using NumPy,
-                SciPy, and XlsxWriter, improving data accuracy and saving
-                approximately eight hours of manual work per week.
-            </li>
+    <p class="section-eyebrow">Experience</p>
+    <article class="timeline-card">
+        <div class="timeline-head">
+            <h3>IT Intern &middot; iEminence Inc.</h3>
+            <span class="timeline-date">Feb 2025 &ndash; Jul 2025</span>
+        </div>
+        <ul class="timeline-list">
+            <li>Engineered an interactive financial analytics dashboard in Python, Streamlit, and Pandas, cutting reporting cycle time by <span class="inline-metric">30%</span> through automated P&amp;L reporting, cash-flow analysis, and KPI visualizations.</li>
+            <li>Automated Excel reporting and validation across 5+ multi-sheet financial datasets using NumPy, SciPy, and XlsxWriter, saving roughly <span class="inline-metric">8 hours</span> of manual work per week.</li>
         </ul>
     </article>
 </section>
 
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-    <h2>Research &amp; Projects</h2>
-
-    <!-- AGENTIC AI PROJECT -->
-    <article class="card">
-        <h3>Agentic AI Autonomous Portfolio Rebalancing Platform</h3>
-
-        <p class="tech-stack">
-            Python • Pandas • NumPy • CVXPY • Pytest • LangChain • CrewAI
-        </p>
-
-        <p>
-            Engineered an AI-powered portfolio rebalancing platform that
-            automates portfolio drift monitoring, trigger evaluation,
-            tax-aware optimization, and explainable trade recommendations.
-        </p>
-
-        <p>
-            Architected a modular trade execution pipeline integrating
-            constraint-based optimization, compliance explanations, audit
-            logging, human approval workflows, and automated testing.
-        </p>
-
-        <a
-            href="https://github.com/gurjeetkaur0005/portfolio-intelligence-platform"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            View GitHub Profile
-        </a>
-    </article>
-
-
-    <!-- MUSIC MODELING -->
-    <article class="card">
-        <h3>Scaling Laws in Symbolic Music Modeling</h3>
-
-        <p class="tech-stack">
-            Python • PyTorch • Transformers • LSTM
-        </p>
-
-        <p>
-            Trained Transformer and LSTM models on a 143-million-token
-            symbolic music dataset to analyze scaling behavior across
-            models ranging from approximately 3 million to more than
-            100 million parameters.
-        </p>
-
-        <p>
-            Conducted systematic model experimentation and hyperparameter
-            tuning, achieving a test loss of 2.22 and a perplexity of 9.20.
-        </p>
-
-        <a
-            href="https://github.com/gurjeetkaur0005/music_scaling_laws"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            View on GitHub
-        </a>
-    </article>
-
-
-    <!-- SMART PHOTO SEARCH -->
-    <article class="card">
-        <h3>Smart Photo Search — AWS Serverless Image Search</h3>
-
-        <p class="tech-stack">
-            AWS S3 • Lambda • API Gateway • Rekognition • OpenSearch • Lex
-        </p>
-
-        <p>
-            Built a serverless photo-search application using AWS services
-            to support natural-language image retrieval through
-            automatically generated image labels.
-        </p>
-
-        <p>
-            Implemented an event-driven indexing pipeline that detected
-            image labels, indexed metadata in OpenSearch, and delivered
-            low-latency search results through REST APIs.
-        </p>
-        <a
-            href=" https://github.com/gurjeetkaur0005/smart-photo-search-aws"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            View on GitHub
-        </a>
-    </article>
-
-
-    <!-- NYC VISUALIZATION -->
-    <article class="card">
-        <h3>
-            How NYC Feels: Understanding Neighborhood Personality
-            Through Urban Data
-        </h3>
-
-        <p class="tech-stack">
-            JavaScript • D3.js • Observable • NYC Open Data
-        </p>
-
-        <p>
-            Developed an interactive urban analytics platform integrating
-            NYC Open Data to analyze neighborhood characteristics across
-            more than 190 Neighborhood Tabulation Areas.
-        </p>
-
-        <p>
-            Built six interactive D3.js visualizations and a weighted
-            recommendation engine that suggests neighborhoods based on
-            user lifestyle preferences.
-        </p>
-         
-    </article>
-   
-
-
-    <!-- KUBERNETES PROJECT -->
-    <article class="card">
-        <h3>To-Do Web Application Deployment</h3>
-
-        <p class="tech-stack">
-            Flask • MongoDB • Docker • Kubernetes • AWS EKS • Prometheus
-        </p>
-
-        <p>
-            Built and containerized a Flask and MongoDB application using
-            Docker and Docker Compose for reproducible local and cloud
-            deployment.
-        </p>
-
-        <p>
-            Deployed the application on Kubernetes and AWS EKS using
-            Deployments, Services, ReplicaSets, rolling updates, health
-            probes, and Prometheus monitoring.
-        </p>
-    </article>
-
-
-    <!-- DINING CONCIERGE -->
-    <article class="card">
-        <h3>Dining Concierge Chatbot — AWS Serverless Application</h3>
-
-        <p class="tech-stack">
-            AWS Lambda • API Gateway • Lex • DynamoDB • OpenSearch • SQS • SES
-        </p>
-
-        <p>
-            Developed a serverless chatbot that provides restaurant
-            recommendations through a conversational interface powered
-            by Amazon Lex and AWS Lambda.
-        </p>
-
-        <p>
-            Designed REST APIs and event-driven workflows using DynamoDB,
-            OpenSearch, SQS, and SES for scalable search, request processing,
-            and asynchronous notifications.
-        </p>
-
-        <a
-            href="https://github.com/gurjeetkaur0005/dining-chatbot"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            View on GitHub
-        </a>
-    </article>
-
-
-    <!-- MARKET BASKET ANALYSIS -->
-    <article class="card">
-        <h3>Online Retail Market Basket Analysis</h3>
-
-        <p class="tech-stack">
-            Python • PySpark • FP-Growth
-        </p>
-
-        <p>
-            Applied PySpark FP-Growth to more than 1.1 million retail
-            transactions to discover customer purchasing patterns.
-        </p>
-
-        <p>
-            Identified more than 850 frequent itemsets and 240
-            high-confidence association rules using support, confidence,
-            and lift metrics.
-        </p>
-
-        <a
-            href="https://github.com/gurjeetkaur0005/fp-growth-online-retail"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            View on GitHub
-        </a>
-    </article>
-
-
-    <!-- DISSERTATION -->
-    <article class="card">
-        <h3>Bilevel Integer Quadratic Programming</h3>
-
-        <p class="tech-stack">
-            MATLAB • Mathematical Optimization
-        </p>
-
-        <p>
-            Developed and validated a generalized MATLAB algorithm for
-            solving bilevel integer quadratic programming problems, with
-            applications in transportation and energy optimization.
-        </p>
-
-        <a
-            href="GurjeetKaur_Dissertation.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            View Dissertation
-        </a>
-    </article>
-</section>
-
-
 <!-- EDUCATION -->
 <section class="section" id="education">
-    <h2>Education</h2>
-
-    <article class="card">
-        <h3>New York University</h3>
-        <p>
-            M.S. in Computer Science |
-            GPA: 3.89/4.0 |
-            September 2025 – May 2027
-        </p>
-    </article>
-
-    <article class="card">
-        <h3>Thapar Institute of Engineering and Technology</h3>
-        <p>
-            M.Sc. in Mathematics and Computing |
-            GPA: 3.79/4.0 |
-            August 2022 – May 2024
-        </p>
-    </article>
-
-    <article class="card">
-        <h3>Panjab University</h3>
-        <p>
-            B.Sc. in Mathematics, Physics, and Chemistry |
-            GPA: 3.31/4.0 |
-            July 2019 – May 2022
-        </p>
-    </article>
+    <p class="section-eyebrow">Education</p>
+    <div class="edu-grid">
+        <article class="edu-card">
+            <h3>New York University</h3>
+            <p class="edu-degree">M.S. in Computer Science</p>
+            <p class="edu-meta"><span class="inline-metric">3.89</span> / 4.0 GPA &middot; Sep 2025 &ndash; May 2027</p>
+        </article>
+        <article class="edu-card">
+            <h3>Thapar Institute of Engineering and Technology</h3>
+            <p class="edu-degree">M.Sc. in Mathematics and Computing</p>
+            <p class="edu-meta"><span class="inline-metric">3.79</span> / 4.0 GPA &middot; Aug 2022 &ndash; May 2024</p>
+        </article>
+        <article class="edu-card">
+            <h3>Panjab University</h3>
+            <p class="edu-degree">B.Sc. in Mathematics, Physics &amp; Chemistry</p>
+            <p class="edu-meta"><span class="inline-metric">3.31</span> / 4.0 GPA &middot; Jul 2019 &ndash; May 2022</p>
+        </article>
+    </div>
 </section>
-
 
 <!-- HONORS -->
 <section class="section" id="honors">
-    <h2>Honors &amp; Distinctions</h2>
-
-    <article class="card">
-        <h3>Institute Medal — First Rank</h3>
-
-        <p>
-            Awarded for securing first position in the M.Sc. Mathematics
-            and Computing graduating class at Thapar Institute of
-            Engineering and Technology.
-        </p>
-
-        <button
-            type="button"
-            class="view-btn"
-            onclick="openModal('institute_medal.jpg')"
-        >
-            View Certificate
-        </button>
-    </article>
-
-    <article class="card">
-        <h3>Certificate of Merit — First Rank</h3>
-
-        <p>
-            Recognized by Thapar Institute of Engineering and Technology
-            for outstanding academic performance and excellence.
-        </p>
-
-        <button
-            type="button"
-            class="view-btn"
-            onclick="openModal('certificate_of_merit.jpg')"
-        >
-            View Certificate
-        </button>
-    </article>
+    <p class="section-eyebrow">Honors &amp; Distinctions</p>
+    <div class="honors-grid">
+        <article class="honor-card">
+            <h3>Institute Medal &mdash; First Rank</h3>
+            <p>Awarded for first position in the M.Sc. Mathematics and Computing graduating class at Thapar Institute of Engineering and Technology.</p>
+            <button type="button" class="view-btn" onclick="openModal('institute_medal.jpg')">View Certificate</button>
+        </article>
+        <article class="honor-card">
+            <h3>Certificate of Merit &mdash; First Rank</h3>
+            <p>Recognized by Thapar Institute of Engineering and Technology for outstanding academic performance and excellence.</p>
+            <button type="button" class="view-btn" onclick="openModal('certificate_of_merit.jpg')">View Certificate</button>
+        </article>
+    </div>
 </section>
-
 
 <!-- CONTACT -->
 <section class="section contact" id="contact">
-    <h2>Contact</h2>
-
-    <p>
-        Email:
-        <a href="mailto:gk2845@nyu.edu">
-            gk2845@nyu.edu
-        </a>
-    </p>
-
-    <p>
-        GitHub:
-        <a
-            href="https://github.com/gurjeetkaur0005"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            github.com/gurjeetkaur0005
-        </a>
-    </p>
-
-    <p>
-        LinkedIn:
-        <a
-            href="https://www.linkedin.com/in/gurjeetkaur11/"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            linkedin.com/in/gurjeetkaur11
-        </a>
-    </p>
+    <p class="section-eyebrow">Contact</p>
+    <h2 class="contact-headline">Let's talk about optimization, ML systems, or a role.</h2>
+    <div class="contact-links">
+        <a href="mailto:gk2845@nyu.edu">gk2845@nyu.edu</a>
+        <a href="https://github.com/gurjeetkaur0005" target="_blank" rel="noopener noreferrer">github.com/gurjeetkaur0005</a>
+        <a href="https://www.linkedin.com/in/gurjeetkaur11/" target="_blank" rel="noopener noreferrer">linkedin.com/in/gurjeetkaur11</a>
+    </div>
 </section>
 
 </main>
 
+<footer class="footer">
+    <p>Gurjeet Kaur &middot; Built with intent, not a template.</p>
+</footer>
 
 <!-- IMAGE MODAL -->
-<div
-    id="imageModal"
-    class="modal"
-    role="dialog"
-    aria-modal="true"
-    aria-label="Certificate preview"
-    onclick="handleModalBackgroundClick(event)"
->
-    <button
-        type="button"
-        class="close"
-        aria-label="Close certificate preview"
-        onclick="closeModal()"
-    >
-        &times;
-    </button>
-
-    <img
-        class="modal-content"
-        id="modalImage"
-        src=""
-        alt="Certificate preview"
-    >
+<div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Certificate preview" onclick="handleModalBackgroundClick(event)">
+    <button type="button" class="close" aria-label="Close certificate preview" onclick="closeModal()">&times;</button>
+    <img class="modal-content" id="modalImage" src="" alt="Certificate preview">
 </div>
-
 
 <script>
     const modal = document.getElementById("imageModal");
     const modalImage = document.getElementById("modalImage");
+    let lastFocused = null;
 
     function openModal(src) {
+        lastFocused = document.activeElement;
         modalImage.src = src;
         modal.style.display = "flex";
         document.body.style.overflow = "hidden";
+        document.querySelector(".close").focus();
     }
-
     function closeModal() {
         modal.style.display = "none";
         modalImage.src = "";
         document.body.style.overflow = "";
+        if (lastFocused) lastFocused.focus();
     }
-
     function handleModalBackgroundClick(event) {
-        if (event.target === modal) {
-            closeModal();
-        }
+        if (event.target === modal) closeModal();
+    }
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape" && modal.style.display === "flex") closeModal();
+    });
+
+    // Convergence spark-line draw-on-load (respects reduced motion)
+    const path = document.getElementById("convergePath");
+    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (path && !prefersReduced) {
+        const length = path.getTotalLength();
+        path.style.strokeDasharray = length;
+        path.style.strokeDashoffset = length;
+        path.getBoundingClientRect();
+        path.style.transition = "stroke-dashoffset 1.8s cubic-bezier(0.16, 1, 0.3, 1)";
+        requestAnimationFrame(() => { path.style.strokeDashoffset = "0"; });
     }
 
-    document.addEventListener("keydown", function(event) {
-        if (event.key === "Escape" && modal.style.display === "flex") {
-            closeModal();
-        }
-    });
+    // Scroll-reveal for section content
+    if (!prefersReduced && "IntersectionObserver" in window) {
+        const revealTargets = document.querySelectorAll(".project-card, .skill-block, .edu-card, .honor-card, .timeline-card");
+        revealTargets.forEach(el => el.classList.add("reveal"));
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("reveal-visible");
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        revealTargets.forEach(el => io.observe(el));
+    }
 </script>
 
 </body>
