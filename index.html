@@ -14,6 +14,26 @@
 </head>
 <body>
 
+<!-- ICON SPRITE (hand-drawn line icons, no external assets) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-code" viewBox="0 0 24 24"><polyline points="9 8 4 12 9 16"/><polyline points="15 8 20 12 15 16"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 0-8 5.5 5.5 0 0 0-10.6 1.6A3.5 3.5 0 0 0 7 18z"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l1.8 1.8M17.8 6.2 16 8M6 18l1.8-1.8M17.8 18l-1.8-1.8"/></symbol>
+    <symbol id="i-bar" viewBox="0 0 24 24"><path d="M5 20V10M12 20V4M19 20v-7"/></symbol>
+    <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M12 15h5"/></symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24"><path d="M4 15l5-6 4 4 7-9"/><path d="M15 4h5v5"/></symbol>
+    <symbol id="i-brief" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></symbol>
+    <symbol id="i-grad" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5 7 21l5-2 5 2-1.5-8.5"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 6l9 7 9-7"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.3-3.4-1.3-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.9 1a10 10 0 0 1 5.2 0c2-1.3 2.9-1 2.9-1 .6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5M3 18l9 5 9-5"/></symbol>
+  </defs>
+</svg>
+
 <nav class="nav">
     <a href="#top" class="nav-mark">GK</a>
     <div class="nav-links">
@@ -29,6 +49,10 @@
 
 <!-- HERO -->
 <header class="hero" id="top">
+    <div class="bg-decor hero-decor" aria-hidden="true">
+        <span class="glow glow-primary"></span>
+        <span class="glow glow-secondary"></span>
+    </div>
     <div class="hero-inner">
         <div class="hero-copy">
             <p class="eyebrow">M.S. Computer Science &middot; NYU Tandon</p>
@@ -42,9 +66,9 @@
             </div>
 
             <div class="hero-links">
-                <a href="https://github.com/gurjeetkaur0005" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/gurjeetkaur0005" target="_blank" rel="noopener noreferrer"><svg class="icon-sm"><use href="#i-github"/></svg>GitHub</a>
                 <a href="https://www.linkedin.com/in/gurjeetkaur11/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="mailto:gk2845@nyu.edu">Email</a>
+                <a href="mailto:gk2845@nyu.edu"><svg class="icon-sm"><use href="#i-mail"/></svg>Email</a>
                 <a href="GurjeetKaur_Dissertation.pdf" target="_blank" rel="noopener noreferrer">Dissertation</a>
             </div>
         </div>
@@ -58,8 +82,8 @@
                           fill="none" stroke="url(#convergeGrad)" stroke-width="2.5" stroke-linecap="round" />
                     <defs>
                         <linearGradient id="convergeGrad" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0%" stop-color="#7C3AED"/>
-                            <stop offset="100%" stop-color="#2563EB"/>
+                            <stop offset="0%" stop-color="#7C5CFF"/>
+                            <stop offset="100%" stop-color="#06B6D4"/>
                         </linearGradient>
                     </defs>
                 </svg>
@@ -72,8 +96,12 @@
 <main>
 
 <!-- ABOUT -->
-<section class="section" id="about">
-    <p class="section-eyebrow">About</p>
+<section class="section section-about" id="about">
+    <div class="section-head">
+        <p class="section-eyebrow">About</p>
+        <h2>Who I am<span class="underline"></span></h2>
+        <p class="section-sub">Math background, systems mindset.</p>
+    </div>
     <div class="about-grid">
         <p class="about-lead">
             I'm pursuing an M.S. in Computer Science at NYU, focused on machine learning,
@@ -92,83 +120,93 @@
 </section>
 
 <!-- PROJECTS -->
-<section class="section" id="projects">
-    <p class="section-eyebrow">Selected Work</p>
+<section class="section section-projects" id="projects">
+    <div class="bg-decor" aria-hidden="true"><span class="glow glow-accent"></span></div>
+    <div class="section-head">
+        <p class="section-eyebrow">Selected Work</p>
+        <h2>Things I've built<span class="underline underline-accent"></span></h2>
+        <p class="section-sub">From constrained optimization to serverless AWS pipelines.</p>
+    </div>
 
     <div class="projects-grid">
 
         <!-- FLAGSHIP 1 -->
         <article class="project-card project-card--flagship">
-            <div class="project-tag">OPT / AGENTIC AI</div>
+            <div class="project-thumb thumb-opt" aria-hidden="true">
+                <svg viewBox="0 0 200 100"><circle cx="100" cy="50" r="34" fill="none" stroke="url(#pg1)" stroke-width="6" stroke-dasharray="140 74"/><circle cx="100" cy="50" r="18" fill="none" stroke="#4F8CFF" stroke-width="3"/><defs><linearGradient id="pg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4F8CFF"/><stop offset="100%" stop-color="#7C5CFF"/></linearGradient></defs></svg>
+            </div>
+            <div class="project-tag tag-opt"><svg class="icon-sm"><use href="#i-layers"/></svg>OPT / AGENTIC AI</div>
             <h3>Agentic AI Autonomous Portfolio Rebalancing Platform</h3>
             <p class="project-summary">An AI-powered platform that automates portfolio drift monitoring, tax-aware trade optimization, and explainable rebalancing decisions.</p>
-            <div class="project-detail">
-                <div>
-                    <span class="detail-label">Problem</span>
-                    <p>Manual portfolio rebalancing is slow, hard to explain to a compliance reviewer, and easy to get wrong under tax constraints.</p>
-                </div>
-                <div>
-                    <span class="detail-label">Solution</span>
-                    <p>A modular trade execution pipeline combining constraint-based optimization, automated compliance explanations, audit logging, and human-approval workflows.</p>
-                </div>
-            </div>
+            <ul class="project-highlights">
+                <li>Constraint-based optimization engine for tax-aware trade sizing</li>
+                <li>Human-approval workflow with explainable compliance narratives</li>
+                <li>Audit logging across the full trade execution pipeline</li>
+            </ul>
             <div class="project-stack">
-                <span>Python</span><span>Pandas</span><span>NumPy</span><span>CVXPY</span><span>LangChain</span><span>CrewAI</span><span>Pytest</span>
+                <span class="badge badge-lang">Python</span><span class="badge badge-data">Pandas</span><span class="badge badge-data">NumPy</span><span class="badge badge-opt">CVXPY</span><span class="badge badge-ml">LangChain</span><span class="badge badge-ml">CrewAI</span><span class="badge badge-tool">Pytest</span>
             </div>
-            <a href="https://github.com/gurjeetkaur0005/portfolio-intelligence-platform" target="_blank" rel="noopener noreferrer" class="project-link">View repository &rarr;</a>
+            <a href="https://github.com/gurjeetkaur0005/portfolio-intelligence-platform" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
         </article>
 
         <!-- FLAGSHIP 2 -->
         <article class="project-card project-card--flagship">
-            <div class="project-tag">ML / SCALING LAWS</div>
+            <div class="project-thumb thumb-ml" aria-hidden="true">
+                <svg viewBox="0 0 200 100"><path d="M10,90 Q40,30 80,50 T160,20" fill="none" stroke="url(#pg2)" stroke-width="4"/><path d="M10,90 Q40,60 80,68 T160,55" fill="none" stroke="#06B6D4" stroke-width="2" opacity="0.6"/><defs><linearGradient id="pg2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#7C5CFF"/><stop offset="100%" stop-color="#4F8CFF"/></linearGradient></defs></svg>
+            </div>
+            <div class="project-tag tag-ml"><svg class="icon-sm"><use href="#i-cpu"/></svg>ML / SCALING LAWS</div>
             <h3>Scaling Laws in Symbolic Music Modeling</h3>
             <p class="project-summary">Trained Transformer and LSTM models across a range of parameter counts to study scaling behavior in symbolic music generation.</p>
-            <div class="project-detail">
-                <div>
-                    <span class="detail-label">Problem</span>
-                    <p>Scaling laws are well studied in text, far less so in symbolic music, where token structure and vocabulary differ sharply from natural language.</p>
-                </div>
-                <div>
-                    <span class="detail-label">Solution</span>
-                    <p>Systematic experimentation across model sizes from ~3M to 100M+ parameters on a 143M-token ABC-notation corpus derived from 178K MIDI files.</p>
-                </div>
-            </div>
+            <ul class="project-highlights">
+                <li>Model sweep from ~3M to 100M+ parameters on a shared corpus</li>
+                <li>143M-token ABC-notation corpus derived from 178K MIDI files</li>
+                <li>Systematic hyperparameter tuning across architectures</li>
+            </ul>
             <div class="project-metrics">
                 <div><span class="metric-num">2.22</span><span class="metric-label">test loss</span></div>
                 <div><span class="metric-num">9.20</span><span class="metric-label">perplexity</span></div>
                 <div><span class="metric-num">143M</span><span class="metric-label">tokens</span></div>
             </div>
             <div class="project-stack">
-                <span>Python</span><span>PyTorch</span><span>Transformers</span><span>LSTM</span>
+                <span class="badge badge-lang">Python</span><span class="badge badge-ml">PyTorch</span><span class="badge badge-ml">Transformers</span><span class="badge badge-ml">LSTM</span>
             </div>
-            <a href="https://github.com/gurjeetkaur0005/music_scaling_laws" target="_blank" rel="noopener noreferrer" class="project-link">View repository &rarr;</a>
+            <a href="https://github.com/gurjeetkaur0005/music_scaling_laws" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
         </article>
 
         <!-- SMART PHOTO SEARCH -->
         <article class="project-card">
-            <div class="project-tag">CLOUD</div>
+            <div class="project-thumb thumb-cloud" aria-hidden="true">
+                <svg viewBox="0 0 200 100"><circle cx="40" cy="50" r="6" fill="#06B6D4"/><circle cx="100" cy="30" r="6" fill="#4F8CFF"/><circle cx="160" cy="55" r="6" fill="#06B6D4"/><circle cx="100" cy="75" r="6" fill="#4F8CFF"/><path d="M40,50 100,30 160,55 100,75 40,50 100,75 160,55 100,30" fill="none" stroke="#334155" stroke-width="1.5"/></svg>
+            </div>
+            <div class="project-tag tag-cloud"><svg class="icon-sm"><use href="#i-cloud"/></svg>CLOUD</div>
             <h3>Smart Photo Search</h3>
             <p class="project-summary">Serverless natural-language image search built on AWS, with an event-driven indexing pipeline.</p>
             <div class="project-stack">
-                <span>S3</span><span>Lambda</span><span>API Gateway</span><span>Rekognition</span><span>OpenSearch</span><span>Lex</span>
+                <span class="badge badge-cloud">S3</span><span class="badge badge-cloud">Lambda</span><span class="badge badge-cloud">API Gateway</span><span class="badge badge-cloud">Rekognition</span><span class="badge badge-cloud">OpenSearch</span><span class="badge badge-cloud">Lex</span>
             </div>
-            <a href="https://github.com/gurjeetkaur0005/smart-photo-search-aws" target="_blank" rel="noopener noreferrer" class="project-link">View repository &rarr;</a>
+            <a href="https://github.com/gurjeetkaur0005/smart-photo-search-aws" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
         </article>
 
         <!-- DINING CONCIERGE -->
         <article class="project-card">
-            <div class="project-tag">CLOUD</div>
+            <div class="project-thumb thumb-cloud" aria-hidden="true">
+                <svg viewBox="0 0 200 100"><rect x="20" y="35" width="30" height="30" rx="4" fill="none" stroke="#06B6D4" stroke-width="2"/><rect x="85" y="20" width="30" height="30" rx="4" fill="none" stroke="#4F8CFF" stroke-width="2"/><rect x="150" y="45" width="30" height="30" rx="4" fill="none" stroke="#06B6D4" stroke-width="2"/><path d="M50,50 85,35 M115,35 150,60" stroke="#334155" stroke-width="1.5"/></svg>
+            </div>
+            <div class="project-tag tag-cloud"><svg class="icon-sm"><use href="#i-cloud"/></svg>CLOUD</div>
             <h3>Dining Concierge Chatbot</h3>
             <p class="project-summary">A serverless conversational chatbot for restaurant recommendations, with async notification via SQS and SES.</p>
             <div class="project-stack">
-                <span>Lambda</span><span>API Gateway</span><span>Lex</span><span>DynamoDB</span><span>OpenSearch</span><span>SQS</span><span>SES</span>
+                <span class="badge badge-cloud">Lambda</span><span class="badge badge-cloud">API Gateway</span><span class="badge badge-cloud">Lex</span><span class="badge badge-cloud">DynamoDB</span><span class="badge badge-cloud">OpenSearch</span><span class="badge badge-cloud">SQS</span><span class="badge badge-cloud">SES</span>
             </div>
-            <a href="https://github.com/gurjeetkaur0005/dining-chatbot" target="_blank" rel="noopener noreferrer" class="project-link">View repository &rarr;</a>
+            <a href="https://github.com/gurjeetkaur0005/dining-chatbot" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
         </article>
 
         <!-- NYC VIZ -->
         <article class="project-card">
-            <div class="project-tag">DATA / VIZ</div>
+            <div class="project-thumb thumb-data" aria-hidden="true">
+                <svg viewBox="0 0 200 100"><rect x="20" y="60" width="14" height="30" fill="#10B981"/><rect x="45" y="40" width="14" height="50" fill="#10B981" opacity="0.8"/><rect x="70" y="55" width="14" height="35" fill="#10B981" opacity="0.6"/><rect x="95" y="25" width="14" height="65" fill="#10B981"/><rect x="120" y="45" width="14" height="45" fill="#10B981" opacity="0.7"/></svg>
+            </div>
+            <div class="project-tag tag-data"><svg class="icon-sm"><use href="#i-bar"/></svg>DATA / VIZ</div>
             <h3>How NYC Feels</h3>
             <p class="project-summary">An interactive urban analytics platform analyzing neighborhood character across 190+ NYC Neighborhood Tabulation Areas.</p>
             <div class="project-metrics">
@@ -176,23 +214,29 @@
                 <div><span class="metric-num">6</span><span class="metric-label">D3 visualizations</span></div>
             </div>
             <div class="project-stack">
-                <span>JavaScript</span><span>D3.js</span><span>Observable</span><span>NYC Open Data</span>
+                <span class="badge badge-lang">JavaScript</span><span class="badge badge-data">D3.js</span><span class="badge badge-data">Observable</span><span class="badge badge-data">NYC Open Data</span>
             </div>
         </article>
 
         <!-- K8S -->
         <article class="project-card">
-            <div class="project-tag">CLOUD / DEVOPS</div>
+            <div class="project-thumb thumb-cloud" aria-hidden="true">
+                <svg viewBox="0 0 200 100"><path d="M100 20l35 20v30l-35 20-35-20V40z" fill="none" stroke="#4F8CFF" stroke-width="2"/><path d="M100 40l17 10v20l-17 10-17-10V50z" fill="none" stroke="#06B6D4" stroke-width="1.5"/></svg>
+            </div>
+            <div class="project-tag tag-cloud"><svg class="icon-sm"><use href="#i-terminal"/></svg>CLOUD / DEVOPS</div>
             <h3>To-Do Web Application Deployment</h3>
             <p class="project-summary">A containerized Flask + MongoDB app deployed to Kubernetes and AWS EKS with rolling updates and health probes.</p>
             <div class="project-stack">
-                <span>Flask</span><span>MongoDB</span><span>Docker</span><span>Kubernetes</span><span>AWS EKS</span><span>Prometheus</span>
+                <span class="badge badge-lang">Flask</span><span class="badge badge-data">MongoDB</span><span class="badge badge-cloud">Docker</span><span class="badge badge-cloud">Kubernetes</span><span class="badge badge-cloud">AWS EKS</span><span class="badge badge-tool">Prometheus</span>
             </div>
         </article>
 
         <!-- MARKET BASKET -->
         <article class="project-card">
-            <div class="project-tag">DATA</div>
+            <div class="project-thumb thumb-data" aria-hidden="true">
+                <svg viewBox="0 0 200 100"><circle cx="60" cy="50" r="26" fill="#10B981" opacity="0.25"/><circle cx="120" cy="50" r="26" fill="#4F8CFF" opacity="0.25"/><circle cx="90" cy="50" r="10" fill="#10B981"/></svg>
+            </div>
+            <div class="project-tag tag-data"><svg class="icon-sm"><use href="#i-trend"/></svg>DATA</div>
             <h3>Online Retail Market Basket Analysis</h3>
             <p class="project-summary">FP-Growth association-rule mining over large-scale retail transaction data.</p>
             <div class="project-metrics">
@@ -200,54 +244,68 @@
                 <div><span class="metric-num">240+</span><span class="metric-label">rules found</span></div>
             </div>
             <div class="project-stack">
-                <span>Python</span><span>PySpark</span><span>FP-Growth</span>
+                <span class="badge badge-lang">Python</span><span class="badge badge-data">PySpark</span><span class="badge badge-data">FP-Growth</span>
             </div>
-            <a href="https://github.com/gurjeetkaur0005/fp-growth-online-retail" target="_blank" rel="noopener noreferrer" class="project-link">View repository &rarr;</a>
+            <a href="https://github.com/gurjeetkaur0005/fp-growth-online-retail" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
         </article>
 
         <!-- DISSERTATION -->
         <article class="project-card">
-            <div class="project-tag">OPT / RESEARCH</div>
+            <div class="project-thumb thumb-opt" aria-hidden="true">
+                <svg viewBox="0 0 200 100"><circle cx="100" cy="22" r="8" fill="#4F8CFF"/><circle cx="60" cy="60" r="8" fill="#7C5CFF"/><circle cx="140" cy="60" r="8" fill="#7C5CFF"/><circle cx="35" cy="90" r="6" fill="#334155"/><circle cx="85" cy="90" r="6" fill="#334155"/><circle cx="115" cy="90" r="6" fill="#334155"/><circle cx="165" cy="90" r="6" fill="#334155"/><path d="M100,22 60,60 M100,22 140,60 M60,60 35,90 M60,60 85,90 M140,60 115,90 M140,60 165,90" stroke="#334155" stroke-width="1.5"/></svg>
+            </div>
+            <div class="project-tag tag-opt"><svg class="icon-sm"><use href="#i-layers"/></svg>OPT / RESEARCH</div>
             <h3>Bilevel Integer Quadratic Programming</h3>
             <p class="project-summary">A generalized MATLAB algorithm for bilevel integer quadratic programs, with applications in transportation and energy optimization.</p>
             <div class="project-stack">
-                <span>MATLAB</span><span>Mathematical Optimization</span>
+                <span class="badge badge-lang">MATLAB</span><span class="badge badge-opt">Mathematical Optimization</span>
             </div>
-            <a href="GurjeetKaur_Dissertation.pdf" target="_blank" rel="noopener noreferrer" class="project-link">View dissertation &rarr;</a>
+            <a href="GurjeetKaur_Dissertation.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm"><svg class="icon-sm"><use href="#i-arrow"/></svg>View dissertation</a>
         </article>
 
     </div>
 </section>
 
 <!-- SKILLS -->
-<section class="section" id="skills">
-    <p class="section-eyebrow">Technical Skills</p>
+<section class="section section-skills" id="skills">
+    <div class="section-head">
+        <p class="section-eyebrow">Technical Skills</p>
+        <h2>Toolbox<span class="underline underline-success"></span></h2>
+        <p class="section-sub">Organized by what each tool is for, not just a list.</p>
+    </div>
     <div class="skills-grid">
-        <div class="skill-block">
+        <div class="skill-block skill-lang">
+            <svg class="icon-lg"><use href="#i-code"/></svg>
             <h3>Languages</h3>
             <p>Python &middot; C++ &middot; SQL &middot; JavaScript &middot; MATLAB</p>
         </div>
-        <div class="skill-block">
+        <div class="skill-block skill-ml">
+            <svg class="icon-lg"><use href="#i-cpu"/></svg>
             <h3>Machine Learning &amp; AI</h3>
             <p>PyTorch &middot; TensorFlow &middot; Scikit-learn &middot; Transformers &middot; XGBoost &middot; LangChain &middot; CrewAI</p>
         </div>
-        <div class="skill-block">
+        <div class="skill-block skill-data">
+            <svg class="icon-lg"><use href="#i-bar"/></svg>
             <h3>Data, Viz &amp; Optimization</h3>
             <p>Pandas &middot; NumPy &middot; SciPy &middot; PySpark &middot; CVXPY &middot; Matplotlib &middot; Plotly &middot; D3.js &middot; Observable</p>
         </div>
-        <div class="skill-block">
+        <div class="skill-block skill-backend">
+            <svg class="icon-lg"><use href="#i-layers"/></svg>
             <h3>Backend</h3>
             <p>FastAPI &middot; Flask &middot; REST APIs</p>
         </div>
-        <div class="skill-block">
+        <div class="skill-block skill-cloud">
+            <svg class="icon-lg"><use href="#i-cloud"/></svg>
             <h3>Cloud &amp; DevOps</h3>
             <p>AWS Lambda &middot; API Gateway &middot; S3 &middot; DynamoDB &middot; Lex &middot; Rekognition &middot; OpenSearch &middot; SQS &middot; SES &middot; Docker &middot; Kubernetes &middot; Prometheus</p>
         </div>
-        <div class="skill-block">
+        <div class="skill-block skill-db">
+            <svg class="icon-lg"><use href="#i-db"/></svg>
             <h3>Databases</h3>
             <p>PostgreSQL &middot; MySQL &middot; MongoDB</p>
         </div>
-        <div class="skill-block">
+        <div class="skill-block skill-tool">
+            <svg class="icon-lg"><use href="#i-terminal"/></svg>
             <h3>Developer Tools</h3>
             <p>Git &middot; GitHub Actions &middot; Pytest &middot; Jupyter</p>
         </div>
@@ -255,35 +313,51 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section class="section" id="experience">
-    <p class="section-eyebrow">Experience</p>
-    <article class="timeline-card">
-        <div class="timeline-head">
-            <h3>IT Intern &middot; iEminence Inc.</h3>
-            <span class="timeline-date">Feb 2025 &ndash; Jul 2025</span>
+<section class="section section-experience" id="experience">
+    <div class="section-head">
+        <p class="section-eyebrow">Experience</p>
+        <h2>Where I've worked<span class="underline"></span></h2>
+        <p class="section-sub">Applied engineering, real deadlines.</p>
+    </div>
+    <div class="timeline">
+        <div class="timeline-node">
+            <span class="timeline-dot"><svg class="icon-sm"><use href="#i-brief"/></svg></span>
+            <article class="timeline-card">
+                <div class="timeline-head">
+                    <h3>IT Intern &middot; iEminence Inc.</h3>
+                    <span class="timeline-date">Feb 2025 &ndash; Jul 2025</span>
+                </div>
+                <ul class="timeline-list">
+                    <li>Engineered an interactive financial analytics dashboard in Python, Streamlit, and Pandas, cutting reporting cycle time by <span class="inline-metric">30%</span> through automated P&amp;L reporting, cash-flow analysis, and KPI visualizations.</li>
+                    <li>Automated Excel reporting and validation across 5+ multi-sheet financial datasets using NumPy, SciPy, and XlsxWriter, saving roughly <span class="inline-metric">8 hours</span> of manual work per week.</li>
+                </ul>
+            </article>
         </div>
-        <ul class="timeline-list">
-            <li>Engineered an interactive financial analytics dashboard in Python, Streamlit, and Pandas, cutting reporting cycle time by <span class="inline-metric">30%</span> through automated P&amp;L reporting, cash-flow analysis, and KPI visualizations.</li>
-            <li>Automated Excel reporting and validation across 5+ multi-sheet financial datasets using NumPy, SciPy, and XlsxWriter, saving roughly <span class="inline-metric">8 hours</span> of manual work per week.</li>
-        </ul>
-    </article>
+    </div>
 </section>
 
 <!-- EDUCATION -->
-<section class="section" id="education">
-    <p class="section-eyebrow">Education</p>
+<section class="section section-education" id="education">
+    <div class="section-head">
+        <p class="section-eyebrow">Education</p>
+        <h2>Academic background<span class="underline underline-accent"></span></h2>
+        <p class="section-sub">Math-first, then systems.</p>
+    </div>
     <div class="edu-grid">
         <article class="edu-card">
+            <svg class="icon-lg"><use href="#i-grad"/></svg>
             <h3>New York University</h3>
             <p class="edu-degree">M.S. in Computer Science</p>
             <p class="edu-meta"><span class="inline-metric">3.89</span> / 4.0 GPA &middot; Sep 2025 &ndash; May 2027</p>
         </article>
         <article class="edu-card">
+            <svg class="icon-lg"><use href="#i-grad"/></svg>
             <h3>Thapar Institute of Engineering and Technology</h3>
             <p class="edu-degree">M.Sc. in Mathematics and Computing</p>
             <p class="edu-meta"><span class="inline-metric">3.79</span> / 4.0 GPA &middot; Aug 2022 &ndash; May 2024</p>
         </article>
         <article class="edu-card">
+            <svg class="icon-lg"><use href="#i-grad"/></svg>
             <h3>Panjab University</h3>
             <p class="edu-degree">B.Sc. in Mathematics, Physics &amp; Chemistry</p>
             <p class="edu-meta"><span class="inline-metric">3.31</span> / 4.0 GPA &middot; Jul 2019 &ndash; May 2022</p>
@@ -292,15 +366,22 @@
 </section>
 
 <!-- HONORS -->
-<section class="section" id="honors">
-    <p class="section-eyebrow">Honors &amp; Distinctions</p>
+<section class="section section-honors" id="honors">
+    <div class="bg-decor" aria-hidden="true"><span class="glow glow-warm"></span></div>
+    <div class="section-head">
+        <p class="section-eyebrow">Honors &amp; Distinctions</p>
+        <h2>Recognition<span class="underline underline-warning"></span></h2>
+        <p class="section-sub">Top of class, twice.</p>
+    </div>
     <div class="honors-grid">
         <article class="honor-card">
+            <svg class="icon-lg"><use href="#i-award"/></svg>
             <h3>Institute Medal &mdash; First Rank</h3>
             <p>Awarded for first position in the M.Sc. Mathematics and Computing graduating class at Thapar Institute of Engineering and Technology.</p>
             <button type="button" class="view-btn" onclick="openModal('institute_medal.jpg')">View Certificate</button>
         </article>
         <article class="honor-card">
+            <svg class="icon-lg"><use href="#i-award"/></svg>
             <h3>Certificate of Merit &mdash; First Rank</h3>
             <p>Recognized by Thapar Institute of Engineering and Technology for outstanding academic performance and excellence.</p>
             <button type="button" class="view-btn" onclick="openModal('certificate_of_merit.jpg')">View Certificate</button>
@@ -310,11 +391,12 @@
 
 <!-- CONTACT -->
 <section class="section contact" id="contact">
+    <div class="bg-decor" aria-hidden="true"><span class="glow glow-primary"></span><span class="glow glow-secondary"></span></div>
     <p class="section-eyebrow">Contact</p>
     <h2 class="contact-headline">Let's talk about optimization, ML systems, or a role.</h2>
     <div class="contact-links">
-        <a href="mailto:gk2845@nyu.edu">gk2845@nyu.edu</a>
-        <a href="https://github.com/gurjeetkaur0005" target="_blank" rel="noopener noreferrer">github.com/gurjeetkaur0005</a>
+        <a href="mailto:gk2845@nyu.edu"><svg class="icon-sm"><use href="#i-mail"/></svg>gk2845@nyu.edu</a>
+        <a href="https://github.com/gurjeetkaur0005" target="_blank" rel="noopener noreferrer"><svg class="icon-sm"><use href="#i-github"/></svg>github.com/gurjeetkaur0005</a>
         <a href="https://www.linkedin.com/in/gurjeetkaur11/" target="_blank" rel="noopener noreferrer">linkedin.com/in/gurjeetkaur11</a>
     </div>
 </section>
