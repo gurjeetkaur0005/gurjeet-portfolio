@@ -14,7 +14,6 @@
 </head>
 <body>
 
-<!-- ICON SPRITE (hand-drawn line icons, no external assets) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="i-code" viewBox="0 0 24 24"><polyline points="9 8 4 12 9 16"/><polyline points="15 8 20 12 15 16"/></symbol>
@@ -35,30 +34,28 @@
 </svg>
 
 <nav class="nav">
-    <a href="#top" class="nav-mark">GK</a>
-    <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Work</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+    <div class="wrap nav-wrap">
+        <a href="#top" class="nav-mark">GK</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Work</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="gurjeet_resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume">Resume</a>
     </div>
-    <a href="gurjeet_resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume">Resume</a>
 </nav>
 
 <!-- HERO -->
 <header class="hero" id="top">
-    <div class="bg-decor hero-decor" aria-hidden="true">
-        <span class="glow glow-primary"></span>
-        <span class="glow glow-secondary"></span>
-    </div>
-    <div class="hero-inner">
+    <div class="wrap hero-inner">
         <div class="hero-copy">
             <p class="eyebrow">M.S. Computer Science &middot; NYU Tandon</p>
             <h1>Gurjeet Kaur</h1>
             <p class="hero-role">Software Engineer &mdash; Machine Learning, Optimization &amp; Cloud Systems</p>
-            <p class="hero-value">I build systems that make decisions under constraints: rebalancing portfolios, scaling language models, and routing data through serverless pipelines &mdash; with the math to know why they work.</p>
+            <p class="hero-value">I build systems that make decisions under constraints: rebalancing portfolios, scaling language models, and routing data through serverless pipelines.</p>
 
             <div class="hero-actions">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -75,329 +72,331 @@
 
         <div class="hero-visual">
             <img src="gurjeet_photo.jpeg" alt="Portrait of Gurjeet Kaur" class="profile-photo">
-            <div class="converge-card">
-                <svg class="converge-svg" viewBox="0 0 320 120" preserveAspectRatio="none" aria-hidden="true">
-                    <line x1="0" y1="100" x2="320" y2="100" class="converge-axis"></line>
-                    <path id="convergePath" d="M0,20 C40,55 60,70 90,82 C130,96 160,98 200,99 C240,99.6 280,99.8 320,99.9"
-                          fill="none" stroke="url(#convergeGrad)" stroke-width="2.5" stroke-linecap="round" />
-                    <defs>
-                        <linearGradient id="convergeGrad" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0%" stop-color="#7C5CFF"/>
-                            <stop offset="100%" stop-color="#06B6D4"/>
-                        </linearGradient>
-                    </defs>
-                </svg>
-                <p class="converge-caption">loss / drift &rarr; converges under constraint</p>
-            </div>
         </div>
+    </div>
+
+    <!-- COMPACT FACT STRIP -->
+    <div class="wrap facts-strip">
+        <div class="fact"><span class="fact-num">3.89</span><span class="fact-label">NYU GPA</span></div>
+        <div class="fact"><span class="fact-num">Rank&nbsp;1</span><span class="fact-label">Institute Medalist</span></div>
+        <div class="fact"><span class="fact-num">M.S.</span><span class="fact-label">Computer Science</span></div>
+        <div class="fact"><span class="fact-num">143M</span><span class="fact-label">token research corpus</span></div>
     </div>
 </header>
 
 <main>
 
 <!-- ABOUT -->
-<section class="section section-about" id="about">
-    <div class="section-head">
-        <p class="section-eyebrow">About</p>
-        <h2>Who I am<span class="underline"></span></h2>
-        <p class="section-sub">Math background, systems mindset.</p>
-    </div>
-    <div class="about-grid">
-        <p class="about-lead">
-            I'm pursuing an M.S. in Computer Science at NYU, focused on machine learning,
-            cloud computing, data engineering, and information visualization. I previously
-            earned an M.Sc. in Mathematics and Computing from Thapar Institute of Engineering
-            and Technology, graduating first in class with the Institute Medal.
-        </p>
-        <p class="about-body">
-            My work sits at the intersection of software engineering, applied AI, mathematical
-            optimization, and scalable cloud systems: an AI-powered portfolio rebalancing
-            platform, Transformer and LSTM models trained on a 143M-token symbolic music
-            corpus, serverless applications on AWS, containerized deployments on Kubernetes,
-            and interactive data visualizations built with D3.js and Observable.
-        </p>
+<section class="section" id="about">
+    <div class="wrap">
+        <p class="section-label">01 &mdash; About</p>
+        <h2 class="section-title">Who I am<span class="rule"></span></h2>
+        <div class="about-grid">
+            <p class="about-lead">
+                I'm pursuing an M.S. in Computer Science at NYU, focused on machine learning,
+                cloud computing, data engineering, and information visualization. I previously
+                earned an M.Sc. in Mathematics and Computing from Thapar Institute of Engineering
+                and Technology, graduating first in class with the Institute Medal.
+            </p>
+            <p class="about-body">
+                My work sits at the intersection of software engineering, applied AI, mathematical
+                optimization, and scalable cloud systems: an AI-powered portfolio rebalancing
+                platform, Transformer and LSTM models trained on a symbolic music corpus,
+                serverless applications on AWS, containerized deployments on Kubernetes, and
+                interactive data visualizations built with D3.js and Observable.
+            </p>
+        </div>
     </div>
 </section>
+
+<div class="divider"></div>
 
 <!-- PROJECTS -->
-<section class="section section-projects" id="projects">
-    <div class="bg-decor" aria-hidden="true"><span class="glow glow-accent"></span></div>
-    <div class="section-head">
-        <p class="section-eyebrow">Selected Work</p>
-        <h2>Things I've built<span class="underline underline-accent"></span></h2>
-        <p class="section-sub">From constrained optimization to serverless AWS pipelines.</p>
-    </div>
+<section class="section section-alt" id="projects">
+    <div class="wrap">
+        <p class="section-label">02 &mdash; Selected Work</p>
+        <h2 class="section-title">Things I've built<span class="rule rule-cyan"></span></h2>
 
-    <div class="projects-grid">
-
-        <!-- FLAGSHIP 1 -->
-        <article class="project-card project-card--flagship">
-            <div class="project-thumb thumb-opt" aria-hidden="true">
-                <svg viewBox="0 0 200 100"><circle cx="100" cy="50" r="34" fill="none" stroke="url(#pg1)" stroke-width="6" stroke-dasharray="140 74"/><circle cx="100" cy="50" r="18" fill="none" stroke="#4F8CFF" stroke-width="3"/><defs><linearGradient id="pg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4F8CFF"/><stop offset="100%" stop-color="#7C5CFF"/></linearGradient></defs></svg>
-            </div>
-            <div class="project-tag tag-opt"><svg class="icon-sm"><use href="#i-layers"/></svg>OPT / AGENTIC AI</div>
-            <h3>Agentic AI Autonomous Portfolio Rebalancing Platform</h3>
-            <p class="project-summary">An AI-powered platform that automates portfolio drift monitoring, tax-aware trade optimization, and explainable rebalancing decisions.</p>
-            <ul class="project-highlights">
-                <li>Constraint-based optimization engine for tax-aware trade sizing</li>
-                <li>Human-approval workflow with explainable compliance narratives</li>
-                <li>Audit logging across the full trade execution pipeline</li>
-            </ul>
-            <div class="project-stack">
-                <span class="badge badge-lang">Python</span><span class="badge badge-data">Pandas</span><span class="badge badge-data">NumPy</span><span class="badge badge-opt">CVXPY</span><span class="badge badge-ml">LangChain</span><span class="badge badge-ml">CrewAI</span><span class="badge badge-tool">Pytest</span>
-            </div>
-            <a href="https://github.com/gurjeetkaur0005/portfolio-intelligence-platform" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
-        </article>
-
-        <!-- FLAGSHIP 2 -->
-        <article class="project-card project-card--flagship">
-            <div class="project-thumb thumb-ml" aria-hidden="true">
-                <svg viewBox="0 0 200 100"><path d="M10,90 Q40,30 80,50 T160,20" fill="none" stroke="url(#pg2)" stroke-width="4"/><path d="M10,90 Q40,60 80,68 T160,55" fill="none" stroke="#06B6D4" stroke-width="2" opacity="0.6"/><defs><linearGradient id="pg2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#7C5CFF"/><stop offset="100%" stop-color="#4F8CFF"/></linearGradient></defs></svg>
-            </div>
-            <div class="project-tag tag-ml"><svg class="icon-sm"><use href="#i-cpu"/></svg>ML / SCALING LAWS</div>
-            <h3>Scaling Laws in Symbolic Music Modeling</h3>
-            <p class="project-summary">Trained Transformer and LSTM models across a range of parameter counts to study scaling behavior in symbolic music generation.</p>
-            <ul class="project-highlights">
-                <li>Model sweep from ~3M to 100M+ parameters on a shared corpus</li>
-                <li>143M-token ABC-notation corpus derived from 178K MIDI files</li>
-                <li>Systematic hyperparameter tuning across architectures</li>
-            </ul>
-            <div class="project-metrics">
-                <div><span class="metric-num">2.22</span><span class="metric-label">test loss</span></div>
-                <div><span class="metric-num">9.20</span><span class="metric-label">perplexity</span></div>
-                <div><span class="metric-num">143M</span><span class="metric-label">tokens</span></div>
-            </div>
-            <div class="project-stack">
-                <span class="badge badge-lang">Python</span><span class="badge badge-ml">PyTorch</span><span class="badge badge-ml">Transformers</span><span class="badge badge-ml">LSTM</span>
-            </div>
-            <a href="https://github.com/gurjeetkaur0005/music_scaling_laws" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
-        </article>
-
-        <!-- SMART PHOTO SEARCH -->
-        <article class="project-card">
-            <div class="project-thumb thumb-cloud" aria-hidden="true">
-                <svg viewBox="0 0 200 100"><circle cx="40" cy="50" r="6" fill="#06B6D4"/><circle cx="100" cy="30" r="6" fill="#4F8CFF"/><circle cx="160" cy="55" r="6" fill="#06B6D4"/><circle cx="100" cy="75" r="6" fill="#4F8CFF"/><path d="M40,50 100,30 160,55 100,75 40,50 100,75 160,55 100,30" fill="none" stroke="#334155" stroke-width="1.5"/></svg>
-            </div>
-            <div class="project-tag tag-cloud"><svg class="icon-sm"><use href="#i-cloud"/></svg>CLOUD</div>
-            <h3>Smart Photo Search</h3>
-            <p class="project-summary">Serverless natural-language image search built on AWS, with an event-driven indexing pipeline.</p>
-            <div class="project-stack">
-                <span class="badge badge-cloud">S3</span><span class="badge badge-cloud">Lambda</span><span class="badge badge-cloud">API Gateway</span><span class="badge badge-cloud">Rekognition</span><span class="badge badge-cloud">OpenSearch</span><span class="badge badge-cloud">Lex</span>
-            </div>
-            <a href="https://github.com/gurjeetkaur0005/smart-photo-search-aws" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
-        </article>
-
-        <!-- DINING CONCIERGE -->
-        <article class="project-card">
-            <div class="project-thumb thumb-cloud" aria-hidden="true">
-                <svg viewBox="0 0 200 100"><rect x="20" y="35" width="30" height="30" rx="4" fill="none" stroke="#06B6D4" stroke-width="2"/><rect x="85" y="20" width="30" height="30" rx="4" fill="none" stroke="#4F8CFF" stroke-width="2"/><rect x="150" y="45" width="30" height="30" rx="4" fill="none" stroke="#06B6D4" stroke-width="2"/><path d="M50,50 85,35 M115,35 150,60" stroke="#334155" stroke-width="1.5"/></svg>
-            </div>
-            <div class="project-tag tag-cloud"><svg class="icon-sm"><use href="#i-cloud"/></svg>CLOUD</div>
-            <h3>Dining Concierge Chatbot</h3>
-            <p class="project-summary">A serverless conversational chatbot for restaurant recommendations, with async notification via SQS and SES.</p>
-            <div class="project-stack">
-                <span class="badge badge-cloud">Lambda</span><span class="badge badge-cloud">API Gateway</span><span class="badge badge-cloud">Lex</span><span class="badge badge-cloud">DynamoDB</span><span class="badge badge-cloud">OpenSearch</span><span class="badge badge-cloud">SQS</span><span class="badge badge-cloud">SES</span>
-            </div>
-            <a href="https://github.com/gurjeetkaur0005/dining-chatbot" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
-        </article>
-
-        <!-- NYC VIZ -->
-        <article class="project-card">
-            <div class="project-thumb thumb-data" aria-hidden="true">
-                <svg viewBox="0 0 200 100"><rect x="20" y="60" width="14" height="30" fill="#10B981"/><rect x="45" y="40" width="14" height="50" fill="#10B981" opacity="0.8"/><rect x="70" y="55" width="14" height="35" fill="#10B981" opacity="0.6"/><rect x="95" y="25" width="14" height="65" fill="#10B981"/><rect x="120" y="45" width="14" height="45" fill="#10B981" opacity="0.7"/></svg>
-            </div>
-            <div class="project-tag tag-data"><svg class="icon-sm"><use href="#i-bar"/></svg>DATA / VIZ</div>
-            <h3>How NYC Feels</h3>
-            <p class="project-summary">An interactive urban analytics platform analyzing neighborhood character across 190+ NYC Neighborhood Tabulation Areas.</p>
-            <div class="project-metrics">
-                <div><span class="metric-num">190+</span><span class="metric-label">NTAs analyzed</span></div>
-                <div><span class="metric-num">6</span><span class="metric-label">D3 visualizations</span></div>
-            </div>
-            <div class="project-stack">
-                <span class="badge badge-lang">JavaScript</span><span class="badge badge-data">D3.js</span><span class="badge badge-data">Observable</span><span class="badge badge-data">NYC Open Data</span>
-            </div>
-        </article>
-
-        <!-- K8S -->
-        <article class="project-card">
-            <div class="project-thumb thumb-cloud" aria-hidden="true">
-                <svg viewBox="0 0 200 100"><path d="M100 20l35 20v30l-35 20-35-20V40z" fill="none" stroke="#4F8CFF" stroke-width="2"/><path d="M100 40l17 10v20l-17 10-17-10V50z" fill="none" stroke="#06B6D4" stroke-width="1.5"/></svg>
-            </div>
-            <div class="project-tag tag-cloud"><svg class="icon-sm"><use href="#i-terminal"/></svg>CLOUD / DEVOPS</div>
-            <h3>To-Do Web Application Deployment</h3>
-            <p class="project-summary">A containerized Flask + MongoDB app deployed to Kubernetes and AWS EKS with rolling updates and health probes.</p>
-            <div class="project-stack">
-                <span class="badge badge-lang">Flask</span><span class="badge badge-data">MongoDB</span><span class="badge badge-cloud">Docker</span><span class="badge badge-cloud">Kubernetes</span><span class="badge badge-cloud">AWS EKS</span><span class="badge badge-tool">Prometheus</span>
-            </div>
-        </article>
-
-        <!-- MARKET BASKET -->
-        <article class="project-card">
-            <div class="project-thumb thumb-data" aria-hidden="true">
-                <svg viewBox="0 0 200 100"><circle cx="60" cy="50" r="26" fill="#10B981" opacity="0.25"/><circle cx="120" cy="50" r="26" fill="#4F8CFF" opacity="0.25"/><circle cx="90" cy="50" r="10" fill="#10B981"/></svg>
-            </div>
-            <div class="project-tag tag-data"><svg class="icon-sm"><use href="#i-trend"/></svg>DATA</div>
-            <h3>Online Retail Market Basket Analysis</h3>
-            <p class="project-summary">FP-Growth association-rule mining over large-scale retail transaction data.</p>
-            <div class="project-metrics">
-                <div><span class="metric-num">1.1M+</span><span class="metric-label">transactions</span></div>
-                <div><span class="metric-num">240+</span><span class="metric-label">rules found</span></div>
-            </div>
-            <div class="project-stack">
-                <span class="badge badge-lang">Python</span><span class="badge badge-data">PySpark</span><span class="badge badge-data">FP-Growth</span>
-            </div>
-            <a href="https://github.com/gurjeetkaur0005/fp-growth-online-retail" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
-        </article>
-
-        <!-- DISSERTATION -->
-        <article class="project-card">
-            <div class="project-thumb thumb-opt" aria-hidden="true">
-                <svg viewBox="0 0 200 100"><circle cx="100" cy="22" r="8" fill="#4F8CFF"/><circle cx="60" cy="60" r="8" fill="#7C5CFF"/><circle cx="140" cy="60" r="8" fill="#7C5CFF"/><circle cx="35" cy="90" r="6" fill="#334155"/><circle cx="85" cy="90" r="6" fill="#334155"/><circle cx="115" cy="90" r="6" fill="#334155"/><circle cx="165" cy="90" r="6" fill="#334155"/><path d="M100,22 60,60 M100,22 140,60 M60,60 35,90 M60,60 85,90 M140,60 115,90 M140,60 165,90" stroke="#334155" stroke-width="1.5"/></svg>
-            </div>
-            <div class="project-tag tag-opt"><svg class="icon-sm"><use href="#i-layers"/></svg>OPT / RESEARCH</div>
-            <h3>Bilevel Integer Quadratic Programming</h3>
-            <p class="project-summary">A generalized MATLAB algorithm for bilevel integer quadratic programs, with applications in transportation and energy optimization.</p>
-            <div class="project-stack">
-                <span class="badge badge-lang">MATLAB</span><span class="badge badge-opt">Mathematical Optimization</span>
-            </div>
-            <a href="GurjeetKaur_Dissertation.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm"><svg class="icon-sm"><use href="#i-arrow"/></svg>View dissertation</a>
-        </article>
-
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section class="section section-skills" id="skills">
-    <div class="section-head">
-        <p class="section-eyebrow">Technical Skills</p>
-        <h2>Toolbox<span class="underline underline-success"></span></h2>
-        <p class="section-sub">Organized by what each tool is for, not just a list.</p>
-    </div>
-    <div class="skills-grid">
-        <div class="skill-block skill-lang">
-            <svg class="icon-lg"><use href="#i-code"/></svg>
-            <h3>Languages</h3>
-            <p>Python &middot; C++ &middot; SQL &middot; JavaScript &middot; MATLAB</p>
-        </div>
-        <div class="skill-block skill-ml">
-            <svg class="icon-lg"><use href="#i-cpu"/></svg>
-            <h3>Machine Learning &amp; AI</h3>
-            <p>PyTorch &middot; TensorFlow &middot; Scikit-learn &middot; Transformers &middot; XGBoost &middot; LangChain &middot; CrewAI</p>
-        </div>
-        <div class="skill-block skill-data">
-            <svg class="icon-lg"><use href="#i-bar"/></svg>
-            <h3>Data, Viz &amp; Optimization</h3>
-            <p>Pandas &middot; NumPy &middot; SciPy &middot; PySpark &middot; CVXPY &middot; Matplotlib &middot; Plotly &middot; D3.js &middot; Observable</p>
-        </div>
-        <div class="skill-block skill-backend">
-            <svg class="icon-lg"><use href="#i-layers"/></svg>
-            <h3>Backend</h3>
-            <p>FastAPI &middot; Flask &middot; REST APIs</p>
-        </div>
-        <div class="skill-block skill-cloud">
-            <svg class="icon-lg"><use href="#i-cloud"/></svg>
-            <h3>Cloud &amp; DevOps</h3>
-            <p>AWS Lambda &middot; API Gateway &middot; S3 &middot; DynamoDB &middot; Lex &middot; Rekognition &middot; OpenSearch &middot; SQS &middot; SES &middot; Docker &middot; Kubernetes &middot; Prometheus</p>
-        </div>
-        <div class="skill-block skill-db">
-            <svg class="icon-lg"><use href="#i-db"/></svg>
-            <h3>Databases</h3>
-            <p>PostgreSQL &middot; MySQL &middot; MongoDB</p>
-        </div>
-        <div class="skill-block skill-tool">
-            <svg class="icon-lg"><use href="#i-terminal"/></svg>
-            <h3>Developer Tools</h3>
-            <p>Git &middot; GitHub Actions &middot; Pytest &middot; Jupyter</p>
-        </div>
-    </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section class="section section-experience" id="experience">
-    <div class="section-head">
-        <p class="section-eyebrow">Experience</p>
-        <h2>Where I've worked<span class="underline"></span></h2>
-        <p class="section-sub">Applied engineering, real deadlines.</p>
-    </div>
-    <div class="timeline">
-        <div class="timeline-node">
-            <span class="timeline-dot"><svg class="icon-sm"><use href="#i-brief"/></svg></span>
-            <article class="timeline-card">
-                <div class="timeline-head">
-                    <h3>IT Intern &middot; iEminence Inc.</h3>
-                    <span class="timeline-date">Feb 2025 &ndash; Jul 2025</span>
+        <!-- FEATURED PAIR — side by side, matching the paired layout below -->
+        <div class="feature-pair">
+            <article class="feature-project">
+                <div class="feature-media">
+                    <svg viewBox="0 0 200 140" class="feature-illustration">
+                        <circle cx="100" cy="70" r="46" fill="none" stroke="url(#pg1)" stroke-width="6" stroke-dasharray="185 105"/>
+                        <circle cx="100" cy="70" r="24" fill="none" stroke="#3B82F6" stroke-width="3"/>
+                        <defs><linearGradient id="pg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3B82F6"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient></defs>
+                    </svg>
                 </div>
-                <ul class="timeline-list">
-                    <li>Engineered an interactive financial analytics dashboard in Python, Streamlit, and Pandas, cutting reporting cycle time by <span class="inline-metric">30%</span> through automated P&amp;L reporting, cash-flow analysis, and KPI visualizations.</li>
-                    <li>Automated Excel reporting and validation across 5+ multi-sheet financial datasets using NumPy, SciPy, and XlsxWriter, saving roughly <span class="inline-metric">8 hours</span> of manual work per week.</li>
-                </ul>
+                <div class="feature-content">
+                    <span class="feature-tag tag-opt">OPT &middot; AGENTIC AI</span>
+                    <h3>Agentic AI Autonomous Portfolio Rebalancing Platform</h3>
+                    <p>An AI-powered platform that automates portfolio drift monitoring, tax-aware trade optimization, and explainable rebalancing decisions.</p>
+                    <ul class="feature-highlights">
+                        <li>Constraint-based optimization engine for tax-aware trade sizing</li>
+                        <li>Human-approval workflow with explainable compliance narratives</li>
+                        <li>Audit logging across the full trade execution pipeline</li>
+                    </ul>
+                    <div class="badge-row">
+                        <span class="badge badge-lang">Python</span><span class="badge badge-data">Pandas</span><span class="badge badge-data">NumPy</span><span class="badge badge-opt">CVXPY</span><span class="badge badge-ml">LangChain</span><span class="badge badge-ml">CrewAI</span><span class="badge badge-tool">Pytest</span>
+                    </div>
+                    <a href="https://github.com/gurjeetkaur0005/portfolio-intelligence-platform" target="_blank" rel="noopener noreferrer" class="text-link"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
+                </div>
+            </article>
+
+            <article class="feature-project">
+                <div class="feature-media">
+                    <svg viewBox="0 0 200 140" class="feature-illustration">
+                        <path d="M10,120 Q45,40 90,70 T180,25" fill="none" stroke="url(#pg2)" stroke-width="4"/>
+                        <path d="M10,120 Q45,85 90,95 T180,72" fill="none" stroke="#22D3EE" stroke-width="2" opacity="0.6"/>
+                        <defs><linearGradient id="pg2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#3B82F6"/></linearGradient></defs>
+                    </svg>
+                </div>
+                <div class="feature-content">
+                    <span class="feature-tag tag-ml">ML &middot; SCALING LAWS</span>
+                    <h3>Scaling Laws in Symbolic Music Modeling</h3>
+                    <p>Trained Transformer and LSTM models across a range of parameter counts to study scaling behavior in symbolic music generation.</p>
+                    <ul class="feature-highlights">
+                        <li>Model sweep from ~3M to 100M+ parameters on a shared corpus</li>
+                        <li>143M-token ABC-notation corpus derived from 178K MIDI files</li>
+                        <li>Systematic hyperparameter tuning across architectures</li>
+                    </ul>
+                    <div class="metric-row">
+                        <div><span class="metric-num">2.22</span><span class="metric-label">test loss</span></div>
+                        <div><span class="metric-num">9.20</span><span class="metric-label">perplexity</span></div>
+                    </div>
+                    <div class="badge-row">
+                        <span class="badge badge-lang">Python</span><span class="badge badge-ml">PyTorch</span><span class="badge badge-ml">Transformers</span><span class="badge badge-ml">LSTM</span>
+                    </div>
+                    <a href="https://github.com/gurjeetkaur0005/music_scaling_laws" target="_blank" rel="noopener noreferrer" class="text-link"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
+                </div>
             </article>
         </div>
+
+        <!-- COMPACT PROJECT GRID — also in pairs -->
+        <div class="mini-grid">
+
+            <article class="mini-card">
+                <span class="feature-tag tag-cloud"><svg class="icon-sm"><use href="#i-cloud"/></svg>CLOUD</span>
+                <h4>Smart Photo Search</h4>
+                <p>Serverless natural-language image search on AWS with an event-driven indexing pipeline.</p>
+                <div class="badge-row badge-row-tight">
+                    <span class="badge badge-cloud">S3</span><span class="badge badge-cloud">Lambda</span><span class="badge badge-cloud">Rekognition</span><span class="badge badge-cloud">OpenSearch</span>
+                </div>
+                <a href="https://github.com/gurjeetkaur0005/smart-photo-search-aws" target="_blank" rel="noopener noreferrer" class="text-link">View repository &rarr;</a>
+            </article>
+
+            <article class="mini-card">
+                <span class="feature-tag tag-cloud"><svg class="icon-sm"><use href="#i-cloud"/></svg>CLOUD</span>
+                <h4>Dining Concierge Chatbot</h4>
+                <p>Serverless conversational chatbot for restaurant recommendations with async SQS/SES notifications.</p>
+                <div class="badge-row badge-row-tight">
+                    <span class="badge badge-cloud">Lambda</span><span class="badge badge-cloud">Lex</span><span class="badge badge-cloud">DynamoDB</span><span class="badge badge-cloud">SQS</span>
+                </div>
+                <a href="https://github.com/gurjeetkaur0005/dining-chatbot" target="_blank" rel="noopener noreferrer" class="text-link">View repository &rarr;</a>
+            </article>
+
+            <article class="mini-card">
+                <span class="feature-tag tag-data"><svg class="icon-sm"><use href="#i-bar"/></svg>DATA / VIZ</span>
+                <h4>How NYC Feels</h4>
+                <p>Interactive urban analytics across 190+ NYC Neighborhood Tabulation Areas.</p>
+                <div class="metric-row metric-row-tight">
+                    <div><span class="metric-num">190+</span><span class="metric-label">NTAs</span></div>
+                    <div><span class="metric-num">6</span><span class="metric-label">D3 visuals</span></div>
+                </div>
+                <div class="badge-row badge-row-tight">
+                    <span class="badge badge-lang">JavaScript</span><span class="badge badge-data">D3.js</span>
+                </div>
+            </article>
+
+            <article class="mini-card">
+                <span class="feature-tag tag-cloud"><svg class="icon-sm"><use href="#i-terminal"/></svg>CLOUD / DEVOPS</span>
+                <h4>To-Do App Deployment</h4>
+                <p>Containerized Flask + MongoDB app deployed to Kubernetes and AWS EKS with rolling updates.</p>
+                <div class="badge-row badge-row-tight">
+                    <span class="badge badge-lang">Flask</span><span class="badge badge-cloud">Kubernetes</span><span class="badge badge-cloud">EKS</span>
+                </div>
+            </article>
+
+            <article class="mini-card">
+                <span class="feature-tag tag-data"><svg class="icon-sm"><use href="#i-trend"/></svg>DATA</span>
+                <h4>Retail Market Basket Analysis</h4>
+                <p>FP-Growth association-rule mining over large-scale retail transaction data.</p>
+                <div class="metric-row metric-row-tight">
+                    <div><span class="metric-num">1.1M+</span><span class="metric-label">transactions</span></div>
+                    <div><span class="metric-num">240+</span><span class="metric-label">rules</span></div>
+                </div>
+                <a href="https://github.com/gurjeetkaur0005/fp-growth-online-retail" target="_blank" rel="noopener noreferrer" class="text-link">View repository &rarr;</a>
+            </article>
+
+            <article class="mini-card">
+                <span class="feature-tag tag-opt"><svg class="icon-sm"><use href="#i-layers"/></svg>OPT / RESEARCH</span>
+                <h4>Bilevel Integer Quadratic Programming</h4>
+                <p>Generalized MATLAB algorithm for bilevel integer quadratic programs, applied to transportation and energy optimization.</p>
+                <div class="badge-row badge-row-tight">
+                    <span class="badge badge-lang">MATLAB</span><span class="badge badge-opt">Optimization</span>
+                </div>
+                <a href="GurjeetKaur_Dissertation.pdf" target="_blank" rel="noopener noreferrer" class="text-link">View dissertation &rarr;</a>
+            </article>
+
+        </div>
     </div>
 </section>
 
-<!-- EDUCATION -->
-<section class="section section-education" id="education">
-    <div class="section-head">
-        <p class="section-eyebrow">Education</p>
-        <h2>Academic background<span class="underline underline-accent"></span></h2>
-        <p class="section-sub">Math-first, then systems.</p>
-    </div>
-    <div class="edu-grid">
-        <article class="edu-card">
-            <svg class="icon-lg"><use href="#i-grad"/></svg>
-            <h3>New York University</h3>
-            <p class="edu-degree">M.S. in Computer Science</p>
-            <p class="edu-meta"><span class="inline-metric">3.89</span> / 4.0 GPA &middot; Sep 2025 &ndash; May 2027</p>
-        </article>
-        <article class="edu-card">
-            <svg class="icon-lg"><use href="#i-grad"/></svg>
-            <h3>Thapar Institute of Engineering and Technology</h3>
-            <p class="edu-degree">M.Sc. in Mathematics and Computing</p>
-            <p class="edu-meta"><span class="inline-metric">3.79</span> / 4.0 GPA &middot; Aug 2022 &ndash; May 2024</p>
-        </article>
-        <article class="edu-card">
-            <svg class="icon-lg"><use href="#i-grad"/></svg>
-            <h3>Panjab University</h3>
-            <p class="edu-degree">B.Sc. in Mathematics, Physics &amp; Chemistry</p>
-            <p class="edu-meta"><span class="inline-metric">3.31</span> / 4.0 GPA &middot; Jul 2019 &ndash; May 2022</p>
-        </article>
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+    <div class="wrap">
+        <p class="section-label">03 &mdash; Skills</p>
+        <h2 class="section-title">Toolbox<span class="rule rule-emerald"></span></h2>
+        <div class="skills-columns">
+            <div class="skill-col">
+                <div class="skill-head"><svg class="icon-sm skill-icon"><use href="#i-code"/></svg><h4>Programming</h4></div>
+                <div class="badge-row badge-row-tight">
+                    <span class="badge badge-lang">Python</span><span class="badge badge-lang">C++</span><span class="badge badge-lang">SQL</span><span class="badge badge-lang">JavaScript</span><span class="badge badge-lang">MATLAB</span>
+                </div>
+            </div>
+            <div class="skill-col">
+                <div class="skill-head"><svg class="icon-sm skill-icon"><use href="#i-cpu"/></svg><h4>AI &amp; Machine Learning</h4></div>
+                <div class="badge-row badge-row-tight">
+                    <span class="badge badge-ml">PyTorch</span><span class="badge badge-ml">TensorFlow</span><span class="badge badge-ml">Scikit-learn</span><span class="badge badge-ml">Transformers</span><span class="badge badge-ml">XGBoost</span><span class="badge badge-ml">LangChain</span><span class="badge badge-ml">CrewAI</span>
+                </div>
+            </div>
+            <div class="skill-col">
+                <div class="skill-head"><svg class="icon-sm skill-icon"><use href="#i-layers"/></svg><h4>Backend</h4></div>
+                <div class="badge-row badge-row-tight">
+                    <span class="badge badge-opt">FastAPI</span><span class="badge badge-opt">Flask</span><span class="badge badge-opt">REST APIs</span>
+                </div>
+            </div>
+            <div class="skill-col">
+                <div class="skill-head"><svg class="icon-sm skill-icon"><use href="#i-cloud"/></svg><h4>Cloud &amp; DevOps</h4></div>
+                <div class="badge-row badge-row-tight">
+                    <span class="badge badge-cloud">Lambda</span><span class="badge badge-cloud">API Gateway</span><span class="badge badge-cloud">S3</span><span class="badge badge-cloud">DynamoDB</span><span class="badge badge-cloud">Rekognition</span><span class="badge badge-cloud">OpenSearch</span><span class="badge badge-cloud">SQS</span><span class="badge badge-cloud">SES</span><span class="badge badge-cloud">Docker</span><span class="badge badge-cloud">Kubernetes</span><span class="badge badge-cloud">Prometheus</span>
+                </div>
+            </div>
+            <div class="skill-col">
+                <div class="skill-head"><svg class="icon-sm skill-icon"><use href="#i-db"/></svg><h4>Databases</h4></div>
+                <div class="badge-row badge-row-tight">
+                    <span class="badge badge-opt">PostgreSQL</span><span class="badge badge-opt">MySQL</span><span class="badge badge-opt">MongoDB</span>
+                </div>
+            </div>
+            <div class="skill-col">
+                <div class="skill-head"><svg class="icon-sm skill-icon"><use href="#i-bar"/></svg><h4>Visualization</h4></div>
+                <div class="badge-row badge-row-tight">
+                    <span class="badge badge-data">Matplotlib</span><span class="badge badge-data">Plotly</span><span class="badge badge-data">D3.js</span><span class="badge badge-data">Observable</span>
+                </div>
+            </div>
+            <div class="skill-col">
+                <div class="skill-head"><svg class="icon-sm skill-icon"><use href="#i-terminal"/></svg><h4>Developer Tools</h4></div>
+                <div class="badge-row badge-row-tight">
+                    <span class="badge badge-lang">Git</span><span class="badge badge-lang">GitHub Actions</span><span class="badge badge-lang">Pytest</span><span class="badge badge-lang">Jupyter</span>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
+<div class="divider"></div>
+
+<!-- EXPERIENCE + EDUCATION -->
+<section class="section section-alt" id="experience">
+    <div class="wrap">
+        <p class="section-label">04 &mdash; Experience</p>
+        <h2 class="section-title">Where I've worked<span class="rule"></span></h2>
+
+        <div class="timeline">
+            <div class="timeline-row">
+                <div class="timeline-date">Feb 2025 &ndash; Jul 2025</div>
+                <div class="timeline-content">
+                    <span class="timeline-dot"></span>
+                    <h4>IT Intern &middot; iEminence Inc.</h4>
+                    <ul>
+                        <li>Engineered an interactive financial analytics dashboard in Python, Streamlit, and Pandas, cutting reporting cycle time by <span class="inline-metric">30%</span> through automated P&amp;L reporting, cash-flow analysis, and KPI visualizations.</li>
+                        <li>Automated Excel reporting and validation across 5+ multi-sheet financial datasets using NumPy, SciPy, and XlsxWriter, saving roughly <span class="inline-metric">8 hours</span> of manual work per week.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section" id="education">
+    <div class="wrap">
+        <p class="section-label">05 &mdash; Education</p>
+        <h2 class="section-title">Academic background<span class="rule rule-cyan"></span></h2>
+
+        <div class="timeline">
+            <div class="timeline-row">
+                <div class="timeline-date">Sep 2025 &ndash; May 2027</div>
+                <div class="timeline-content">
+                    <span class="timeline-dot"></span>
+                    <h4>New York University &middot; M.S. Computer Science</h4>
+                    <p class="timeline-meta"><span class="inline-metric">3.89</span> / 4.0 GPA</p>
+                </div>
+            </div>
+            <div class="timeline-row">
+                <div class="timeline-date">Aug 2022 &ndash; May 2024</div>
+                <div class="timeline-content">
+                    <span class="timeline-dot"></span>
+                    <h4>Thapar Institute of Engineering and Technology &middot; M.Sc. Mathematics and Computing</h4>
+                    <p class="timeline-meta"><span class="inline-metric">3.79</span> / 4.0 GPA</p>
+                </div>
+            </div>
+            <div class="timeline-row">
+                <div class="timeline-date">Jul 2019 &ndash; May 2022</div>
+                <div class="timeline-content">
+                    <span class="timeline-dot"></span>
+                    <h4>Panjab University &middot; B.Sc. Mathematics, Physics &amp; Chemistry</h4>
+                    <p class="timeline-meta"><span class="inline-metric">3.31</span> / 4.0 GPA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
 
 <!-- HONORS -->
-<section class="section section-honors" id="honors">
-    <div class="bg-decor" aria-hidden="true"><span class="glow glow-warm"></span></div>
-    <div class="section-head">
-        <p class="section-eyebrow">Honors &amp; Distinctions</p>
-        <h2>Recognition<span class="underline underline-warning"></span></h2>
-        <p class="section-sub">Top of class, twice.</p>
-    </div>
-    <div class="honors-grid">
-        <article class="honor-card">
-            <svg class="icon-lg"><use href="#i-award"/></svg>
-            <h3>Institute Medal &mdash; First Rank</h3>
-            <p>Awarded for first position in the M.Sc. Mathematics and Computing graduating class at Thapar Institute of Engineering and Technology.</p>
-            <button type="button" class="view-btn" onclick="openModal('institute_medal.jpg')">View Certificate</button>
-        </article>
-        <article class="honor-card">
-            <svg class="icon-lg"><use href="#i-award"/></svg>
-            <h3>Certificate of Merit &mdash; First Rank</h3>
-            <p>Recognized by Thapar Institute of Engineering and Technology for outstanding academic performance and excellence.</p>
-            <button type="button" class="view-btn" onclick="openModal('certificate_of_merit.jpg')">View Certificate</button>
-        </article>
+<section class="section section-alt" id="honors">
+    <div class="wrap">
+        <p class="section-label">06 &mdash; Honors</p>
+        <h2 class="section-title">Recognition<span class="rule rule-emerald"></span></h2>
+
+        <div class="honor-list">
+            <div class="honor-row">
+                <svg class="icon-sm honor-icon"><use href="#i-award"/></svg>
+                <div class="honor-text">
+                    <h4>Institute Medal &mdash; First Rank</h4>
+                    <p>First position, M.Sc. Mathematics and Computing, Thapar Institute of Engineering and Technology.</p>
+                </div>
+                <button type="button" class="text-link honor-btn" onclick="openModal('institute_medal.jpg')">View Certificate</button>
+            </div>
+            <div class="honor-row">
+                <svg class="icon-sm honor-icon"><use href="#i-award"/></svg>
+                <div class="honor-text">
+                    <h4>Certificate of Merit &mdash; First Rank</h4>
+                    <p>Recognized by Thapar Institute of Engineering and Technology for academic excellence.</p>
+                </div>
+                <button type="button" class="text-link honor-btn" onclick="openModal('certificate_of_merit.jpg')">View Certificate</button>
+            </div>
+        </div>
     </div>
 </section>
+
+<div class="divider"></div>
 
 <!-- CONTACT -->
 <section class="section contact" id="contact">
-    <div class="bg-decor" aria-hidden="true"><span class="glow glow-primary"></span><span class="glow glow-secondary"></span></div>
-    <p class="section-eyebrow">Contact</p>
-    <h2 class="contact-headline">Let's talk about optimization, ML systems, or a role.</h2>
-    <div class="contact-links">
-        <a href="mailto:gk2845@nyu.edu"><svg class="icon-sm"><use href="#i-mail"/></svg>gk2845@nyu.edu</a>
-        <a href="https://github.com/gurjeetkaur0005" target="_blank" rel="noopener noreferrer"><svg class="icon-sm"><use href="#i-github"/></svg>github.com/gurjeetkaur0005</a>
-        <a href="https://www.linkedin.com/in/gurjeetkaur11/" target="_blank" rel="noopener noreferrer">linkedin.com/in/gurjeetkaur11</a>
+    <div class="wrap">
+        <p class="section-label">07 &mdash; Contact</p>
+        <h2 class="section-title contact-headline">Let's talk about optimization, ML systems, or a role.<span class="rule"></span></h2>
+        <div class="contact-links">
+            <a href="mailto:gk2845@nyu.edu"><svg class="icon-sm"><use href="#i-mail"/></svg>gk2845@nyu.edu</a>
+            <a href="https://github.com/gurjeetkaur0005" target="_blank" rel="noopener noreferrer"><svg class="icon-sm"><use href="#i-github"/></svg>github.com/gurjeetkaur0005</a>
+            <a href="https://www.linkedin.com/in/gurjeetkaur11/" target="_blank" rel="noopener noreferrer">linkedin.com/in/gurjeetkaur11</a>
+        </div>
     </div>
 </section>
 
@@ -407,7 +406,6 @@
     <p>Gurjeet Kaur &middot; Built with intent, not a template.</p>
 </footer>
 
-<!-- IMAGE MODAL -->
 <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Certificate preview" onclick="handleModalBackgroundClick(event)">
     <button type="button" class="close" aria-label="Close certificate preview" onclick="closeModal()">&times;</button>
     <img class="modal-content" id="modalImage" src="" alt="Certificate preview">
@@ -438,21 +436,9 @@
         if (event.key === "Escape" && modal.style.display === "flex") closeModal();
     });
 
-    // Convergence spark-line draw-on-load (respects reduced motion)
-    const path = document.getElementById("convergePath");
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (path && !prefersReduced) {
-        const length = path.getTotalLength();
-        path.style.strokeDasharray = length;
-        path.style.strokeDashoffset = length;
-        path.getBoundingClientRect();
-        path.style.transition = "stroke-dashoffset 1.8s cubic-bezier(0.16, 1, 0.3, 1)";
-        requestAnimationFrame(() => { path.style.strokeDashoffset = "0"; });
-    }
-
-    // Scroll-reveal for section content
     if (!prefersReduced && "IntersectionObserver" in window) {
-        const revealTargets = document.querySelectorAll(".project-card, .skill-block, .edu-card, .honor-card, .timeline-card");
+        const revealTargets = document.querySelectorAll(".feature-project, .mini-card, .skill-col, .timeline-row, .honor-row, .fact");
         revealTargets.forEach(el => el.classList.add("reveal"));
         const io = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
