@@ -48,6 +48,7 @@
     </div>
 </nav>
 
+<!-- HERO -->
 <header class="hero" id="top">
     <div class="wrap hero-inner">
         <div class="hero-copy">
@@ -73,10 +74,19 @@
             <img src="gurjeet_photo.jpeg" alt="Portrait of Gurjeet Kaur" class="profile-photo">
         </div>
     </div>
+
+    <!-- COMPACT FACT STRIP -->
+    <div class="wrap facts-strip">
+        <div class="fact"><span class="fact-num">3.89</span><span class="fact-label">NYU GPA</span></div>
+        <div class="fact"><span class="fact-num">Rank&nbsp;1</span><span class="fact-label">Institute Medalist</span></div>
+        <div class="fact"><span class="fact-num">M.S.</span><span class="fact-label">Computer Science</span></div>
+        <div class="fact"><span class="fact-num">143M</span><span class="fact-label">token research corpus</span></div>
+    </div>
 </header>
 
 <main>
 
+<!-- ABOUT -->
 <section class="section" id="about">
     <div class="wrap">
         <p class="section-label">01 &mdash; About</p>
@@ -101,128 +111,140 @@
 
 <div class="divider"></div>
 
+<!-- PROJECTS -->
 <section class="section section-alt" id="projects">
     <div class="wrap">
         <p class="section-label">02 &mdash; Selected Work</p>
         <h2 class="section-title">Things I've built<span class="rule rule-cyan"></span></h2>
 
-        <div class="projects-grid">
-            <article class="project-card">
-                <div class="project-media">
-                    <svg viewBox="0 0 200 140" class="project-illustration">
+        <!-- FEATURED PAIR — side by side, matching the paired layout below -->
+        <div class="feature-pair">
+            <article class="feature-project">
+                <div class="feature-media">
+                    <svg viewBox="0 0 200 140" class="feature-illustration">
                         <circle cx="100" cy="70" r="46" fill="none" stroke="url(#pg1)" stroke-width="6" stroke-dasharray="185 105"/>
                         <circle cx="100" cy="70" r="24" fill="none" stroke="#3B82F6" stroke-width="3"/>
                         <defs><linearGradient id="pg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3B82F6"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient></defs>
                     </svg>
                 </div>
-                <span class="feature-tag tag-opt">OPT &middot; AGENTIC AI</span>
-                <h3>Agentic AI Autonomous Portfolio Rebalancing Platform</h3>
-                <p>An AI-powered platform that automates portfolio drift monitoring, tax-aware trade optimization, and explainable rebalancing decisions.</p>
-                <ul class="feature-highlights">
-                    <li>Constraint-based optimization engine for tax-aware trade sizing</li>
-                    <li>Human-approval workflow with explainable compliance narratives</li>
-                    <li>Audit logging across the full trade execution pipeline</li>
-                </ul>
-                <div class="badge-row">
-                    <span class="badge badge-lang">Python</span><span class="badge badge-data">Pandas</span><span class="badge badge-data">NumPy</span><span class="badge badge-opt">CVXPY</span><span class="badge badge-ml">LangChain</span><span class="badge badge-ml">CrewAI</span><span class="badge badge-tool">Pytest</span>
+                <div class="feature-content">
+                    <span class="feature-tag tag-opt">OPT &middot; AGENTIC AI</span>
+                    <h3>Agentic AI Autonomous Portfolio Rebalancing Platform</h3>
+                    <p>An AI-powered platform that automates portfolio drift monitoring, tax-aware trade optimization, and explainable rebalancing decisions.</p>
+                    <ul class="feature-highlights">
+                        <li>Constraint-based optimization engine for tax-aware trade sizing</li>
+                        <li>Human-approval workflow with explainable compliance narratives</li>
+                        <li>Audit logging across the full trade execution pipeline</li>
+                    </ul>
+                    <div class="badge-row">
+                        <span class="badge badge-lang">Python</span><span class="badge badge-data">Pandas</span><span class="badge badge-data">NumPy</span><span class="badge badge-opt">CVXPY</span><span class="badge badge-ml">LangChain</span><span class="badge badge-ml">CrewAI</span><span class="badge badge-tool">Pytest</span>
+                    </div>
+                    <a href="https://github.com/gurjeetkaur0005/portfolio-intelligence-platform" target="_blank" rel="noopener noreferrer" class="text-link"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
                 </div>
-                <a href="https://github.com/gurjeetkaur0005/portfolio-intelligence-platform" target="_blank" rel="noopener noreferrer" class="text-link"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
             </article>
 
-            <article class="project-card">
-                <div class="project-media">
-                    <svg viewBox="0 0 200 140" class="project-illustration">
+            <article class="feature-project">
+                <div class="feature-media">
+                    <svg viewBox="0 0 200 140" class="feature-illustration">
                         <path d="M10,120 Q45,40 90,70 T180,25" fill="none" stroke="url(#pg2)" stroke-width="4"/>
                         <path d="M10,120 Q45,85 90,95 T180,72" fill="none" stroke="#22D3EE" stroke-width="2" opacity="0.6"/>
                         <defs><linearGradient id="pg2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#3B82F6"/></linearGradient></defs>
                     </svg>
                 </div>
-                <span class="feature-tag tag-ml">ML &middot; SCALING LAWS</span>
-                <h3>Scaling Laws in Symbolic Music Modeling</h3>
-                <p>Trained Transformer and LSTM models across a range of parameter counts to study scaling behavior in symbolic music generation.</p>
-                <ul class="feature-highlights">
-                    <li>Model sweep from ~3M to 100M+ parameters on a shared corpus</li>
-                    <li>143M-token ABC-notation corpus derived from 178K MIDI files</li>
-                    <li>Systematic hyperparameter tuning across architectures</li>
-                </ul>
-                <div class="metric-row">
-                    <div><span class="metric-num">2.22</span><span class="metric-label">test loss</span></div>
-                    <div><span class="metric-num">9.20</span><span class="metric-label">perplexity</span></div>
+                <div class="feature-content">
+                    <span class="feature-tag tag-ml">ML &middot; SCALING LAWS</span>
+                    <h3>Scaling Laws in Symbolic Music Modeling</h3>
+                    <p>Trained Transformer and LSTM models across a range of parameter counts to study scaling behavior in symbolic music generation.</p>
+                    <ul class="feature-highlights">
+                        <li>Model sweep from ~3M to 100M+ parameters on a shared corpus</li>
+                        <li>143M-token ABC-notation corpus derived from 178K MIDI files</li>
+                        <li>Systematic hyperparameter tuning across architectures</li>
+                    </ul>
+                    <div class="metric-row">
+                        <div><span class="metric-num">2.22</span><span class="metric-label">test loss</span></div>
+                        <div><span class="metric-num">9.20</span><span class="metric-label">perplexity</span></div>
+                    </div>
+                    <div class="badge-row">
+                        <span class="badge badge-lang">Python</span><span class="badge badge-ml">PyTorch</span><span class="badge badge-ml">Transformers</span><span class="badge badge-ml">LSTM</span>
+                    </div>
+                    <a href="https://github.com/gurjeetkaur0005/music_scaling_laws" target="_blank" rel="noopener noreferrer" class="text-link"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
                 </div>
-                <div class="badge-row">
-                    <span class="badge badge-lang">Python</span><span class="badge badge-ml">PyTorch</span><span class="badge badge-ml">Transformers</span><span class="badge badge-ml">LSTM</span>
-                </div>
-                <a href="https://github.com/gurjeetkaur0005/music_scaling_laws" target="_blank" rel="noopener noreferrer" class="text-link"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
             </article>
+        </div>
 
-            <article class="project-card">
+        <!-- COMPACT PROJECT GRID — also in pairs -->
+        <div class="mini-grid">
+
+            <article class="mini-card">
                 <span class="feature-tag tag-cloud"><svg class="icon-sm"><use href="#i-cloud"/></svg>CLOUD</span>
-                <h3>Smart Photo Search</h3>
+                <h4>Smart Photo Search</h4>
                 <p>Serverless natural-language image search on AWS with an event-driven indexing pipeline.</p>
-                <div class="badge-row">
+                <div class="badge-row badge-row-tight">
                     <span class="badge badge-cloud">S3</span><span class="badge badge-cloud">Lambda</span><span class="badge badge-cloud">Rekognition</span><span class="badge badge-cloud">OpenSearch</span>
                 </div>
                 <a href="https://github.com/gurjeetkaur0005/smart-photo-search-aws" target="_blank" rel="noopener noreferrer" class="text-link">View repository &rarr;</a>
             </article>
 
-            <article class="project-card">
+            <article class="mini-card">
                 <span class="feature-tag tag-cloud"><svg class="icon-sm"><use href="#i-cloud"/></svg>CLOUD</span>
-                <h3>Dining Concierge Chatbot</h3>
+                <h4>Dining Concierge Chatbot</h4>
                 <p>Serverless conversational chatbot for restaurant recommendations with async SQS/SES notifications.</p>
-                <div class="badge-row">
+                <div class="badge-row badge-row-tight">
                     <span class="badge badge-cloud">Lambda</span><span class="badge badge-cloud">Lex</span><span class="badge badge-cloud">DynamoDB</span><span class="badge badge-cloud">SQS</span>
                 </div>
                 <a href="https://github.com/gurjeetkaur0005/dining-chatbot" target="_blank" rel="noopener noreferrer" class="text-link">View repository &rarr;</a>
             </article>
 
-            <article class="project-card">
+            <article class="mini-card">
                 <span class="feature-tag tag-data"><svg class="icon-sm"><use href="#i-bar"/></svg>DATA / VIZ</span>
-                <h3>How NYC Feels</h3>
+                <h4>How NYC Feels</h4>
                 <p>Interactive urban analytics across 190+ NYC Neighborhood Tabulation Areas.</p>
-                <div class="metric-row">
+                <div class="metric-row metric-row-tight">
                     <div><span class="metric-num">190+</span><span class="metric-label">NTAs</span></div>
                     <div><span class="metric-num">6</span><span class="metric-label">D3 visuals</span></div>
                 </div>
-                <div class="badge-row">
+                <div class="badge-row badge-row-tight">
                     <span class="badge badge-lang">JavaScript</span><span class="badge badge-data">D3.js</span>
                 </div>
             </article>
 
-            <article class="project-card">
+            <article class="mini-card">
                 <span class="feature-tag tag-cloud"><svg class="icon-sm"><use href="#i-terminal"/></svg>CLOUD / DEVOPS</span>
-                <h3>To-Do App Deployment</h3>
+                <h4>To-Do App Deployment</h4>
                 <p>Containerized Flask + MongoDB app deployed to Kubernetes and AWS EKS with rolling updates.</p>
-                <div class="badge-row">
+                <div class="badge-row badge-row-tight">
                     <span class="badge badge-lang">Flask</span><span class="badge badge-cloud">Kubernetes</span><span class="badge badge-cloud">EKS</span>
                 </div>
             </article>
 
-            <article class="project-card">
+            <article class="mini-card">
                 <span class="feature-tag tag-data"><svg class="icon-sm"><use href="#i-trend"/></svg>DATA</span>
-                <h3>Retail Market Basket Analysis</h3>
+                <h4>Retail Market Basket Analysis</h4>
                 <p>FP-Growth association-rule mining over large-scale retail transaction data.</p>
-                <div class="metric-row">
+                <div class="metric-row metric-row-tight">
                     <div><span class="metric-num">1.1M+</span><span class="metric-label">transactions</span></div>
                     <div><span class="metric-num">240+</span><span class="metric-label">rules</span></div>
                 </div>
                 <a href="https://github.com/gurjeetkaur0005/fp-growth-online-retail" target="_blank" rel="noopener noreferrer" class="text-link">View repository &rarr;</a>
             </article>
 
-            <article class="project-card">
+            <article class="mini-card">
                 <span class="feature-tag tag-opt"><svg class="icon-sm"><use href="#i-layers"/></svg>OPT / RESEARCH</span>
-                <h3>Bilevel Integer Quadratic Programming</h3>
+                <h4>Bilevel Integer Quadratic Programming</h4>
                 <p>Generalized MATLAB algorithm for bilevel integer quadratic programs, applied to transportation and energy optimization.</p>
-                <div class="badge-row">
+                <div class="badge-row badge-row-tight">
                     <span class="badge badge-lang">MATLAB</span><span class="badge badge-opt">Optimization</span>
                 </div>
                 <a href="GurjeetKaur_Dissertation.pdf" target="_blank" rel="noopener noreferrer" class="text-link">View dissertation &rarr;</a>
             </article>
+
         </div>
     </div>
 </section>
 
 <div class="divider"></div>
 
+<!-- SKILLS -->
 <section class="section" id="skills">
     <div class="wrap">
         <p class="section-label">03 &mdash; Skills</p>
@@ -276,6 +298,7 @@
 
 <div class="divider"></div>
 
+<!-- EXPERIENCE + EDUCATION -->
 <section class="section section-alt" id="experience">
     <div class="wrap">
         <p class="section-label">04 &mdash; Experience</p>
@@ -335,6 +358,7 @@
 
 <div class="divider"></div>
 
+<!-- HONORS -->
 <section class="section section-alt" id="honors">
     <div class="wrap">
         <p class="section-label">06 &mdash; Honors</p>
@@ -363,6 +387,7 @@
 
 <div class="divider"></div>
 
+<!-- CONTACT -->
 <section class="section contact" id="contact">
     <div class="wrap">
         <p class="section-label">07 &mdash; Contact</p>
@@ -398,31 +423,23 @@
         document.body.style.overflow = "hidden";
         document.querySelector(".close").focus();
     }
-
     function closeModal() {
         modal.style.display = "none";
         modalImage.src = "";
         document.body.style.overflow = "";
         if (lastFocused) lastFocused.focus();
     }
-
     function handleModalBackgroundClick(event) {
         if (event.target === modal) closeModal();
     }
-
     document.addEventListener("keydown", function(event) {
         if (event.key === "Escape" && modal.style.display === "flex") closeModal();
     });
 
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
     if (!prefersReduced && "IntersectionObserver" in window) {
-        const revealTargets = document.querySelectorAll(
-            ".project-card, .skill-col, .timeline-row, .honor-row"
-        );
-
+        const revealTargets = document.querySelectorAll(".feature-project, .mini-card, .skill-col, .timeline-row, .honor-row, .fact");
         revealTargets.forEach(el => el.classList.add("reveal"));
-
         const io = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -431,7 +448,6 @@
                 }
             });
         }, { threshold: 0.12 });
-
         revealTargets.forEach(el => io.observe(el));
     }
 </script>
