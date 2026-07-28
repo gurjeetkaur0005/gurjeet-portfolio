@@ -110,138 +110,371 @@
 </section>
 
 <div class="divider"></div>
-
 <!-- PROJECTS -->
 <section class="section section-alt" id="projects">
     <div class="wrap">
         <p class="section-label">02 &mdash; Selected Work</p>
-        <h2 class="section-title">Things I've built<span class="rule rule-cyan"></span></h2>
 
-        <!-- FEATURED PAIR — side by side, matching the paired layout below -->
-        <div class="feature-pair">
-            <article class="feature-project">
-                <div class="feature-media">
-                    <svg viewBox="0 0 200 140" class="feature-illustration">
-                        <circle cx="100" cy="70" r="46" fill="none" stroke="url(#pg1)" stroke-width="6" stroke-dasharray="185 105"/>
-                        <circle cx="100" cy="70" r="24" fill="none" stroke="#3B82F6" stroke-width="3"/>
-                        <defs><linearGradient id="pg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3B82F6"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient></defs>
-                    </svg>
-                </div>
-                <div class="feature-content">
-                    <span class="feature-tag tag-opt">OPT &middot; AGENTIC AI</span>
-                    <h3>Agentic AI Autonomous Portfolio Rebalancing Platform</h3>
-                    <p>An AI-powered platform that automates portfolio drift monitoring, tax-aware trade optimization, and explainable rebalancing decisions.</p>
-                    <ul class="feature-highlights">
-                        <li>Constraint-based optimization engine for tax-aware trade sizing</li>
-                        <li>Human-approval workflow with explainable compliance narratives</li>
-                        <li>Audit logging across the full trade execution pipeline</li>
-                    </ul>
-                    <div class="badge-row">
-                        <span class="badge badge-lang">Python</span><span class="badge badge-data">Pandas</span><span class="badge badge-data">NumPy</span><span class="badge badge-opt">CVXPY</span><span class="badge badge-ml">LangChain</span><span class="badge badge-ml">CrewAI</span><span class="badge badge-tool">Pytest</span>
-                    </div>
-                    <a href="https://github.com/gurjeetkaur0005/portfolio-intelligence-platform" target="_blank" rel="noopener noreferrer" class="text-link"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
-                </div>
-            </article>
+        <h2 class="section-title">
+            Things I've built
+            <span class="rule rule-cyan"></span>
+        </h2>
 
-            <article class="feature-project">
-                <div class="feature-media">
-                    <svg viewBox="0 0 200 140" class="feature-illustration">
-                        <path d="M10,120 Q45,40 90,70 T180,25" fill="none" stroke="url(#pg2)" stroke-width="4"/>
-                        <path d="M10,120 Q45,85 90,95 T180,72" fill="none" stroke="#22D3EE" stroke-width="2" opacity="0.6"/>
-                        <defs><linearGradient id="pg2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#3B82F6"/></linearGradient></defs>
-                    </svg>
-                </div>
-                <div class="feature-content">
-                    <span class="feature-tag tag-ml">ML &middot; SCALING LAWS</span>
-                    <h3>Scaling Laws in Symbolic Music Modeling</h3>
-                    <p>Trained Transformer and LSTM models across a range of parameter counts to study scaling behavior in symbolic music generation.</p>
-                    <ul class="feature-highlights">
-                        <li>Model sweep from ~3M to 100M+ parameters on a shared corpus</li>
-                        <li>143M-token ABC-notation corpus derived from 178K MIDI files</li>
-                        <li>Systematic hyperparameter tuning across architectures</li>
-                    </ul>
-                    <div class="metric-row">
-                        <div><span class="metric-num">2.22</span><span class="metric-label">test loss</span></div>
-                        <div><span class="metric-num">9.20</span><span class="metric-label">perplexity</span></div>
-                    </div>
-                    <div class="badge-row">
-                        <span class="badge badge-lang">Python</span><span class="badge badge-ml">PyTorch</span><span class="badge badge-ml">Transformers</span><span class="badge badge-ml">LSTM</span>
-                    </div>
-                    <a href="https://github.com/gurjeetkaur0005/music_scaling_laws" target="_blank" rel="noopener noreferrer" class="text-link"><svg class="icon-sm"><use href="#i-github"/></svg>View repository</a>
-                </div>
-            </article>
-        </div>
-
-        <!-- COMPACT PROJECT GRID — also in pairs -->
+        <!-- ALL PROJECTS USE THE SAME CARD FORMAT -->
         <div class="mini-grid">
 
+            <!-- PROJECT 1 -->
             <article class="mini-card">
-                <span class="feature-tag tag-cloud"><svg class="icon-sm"><use href="#i-cloud"/></svg>CLOUD</span>
+                <span class="feature-tag tag-opt">
+                    <svg class="icon-sm">
+                        <use href="#i-layers"></use>
+                    </svg>
+                    OPT &middot; AGENTIC AI
+                </span>
+
+                <h4>
+                    Agentic AI Autonomous Portfolio Rebalancing Platform
+                </h4>
+
+                <p>
+                    AI-powered platform that automates portfolio drift
+                    monitoring, tax-aware trade optimization, and explainable
+                    rebalancing decisions.
+                </p>
+
+                <ul class="project-highlights">
+                    <li>Constraint-based optimization for tax-aware trades</li>
+                    <li>Human-approval and compliance explanation workflow</li>
+                    <li>Audit logging across the rebalancing pipeline</li>
+                </ul>
+
+                <div class="badge-row badge-row-tight">
+                    <span class="badge badge-lang">Python</span>
+                    <span class="badge badge-data">Pandas</span>
+                    <span class="badge badge-data">NumPy</span>
+                    <span class="badge badge-opt">CVXPY</span>
+                    <span class="badge badge-ml">LangChain</span>
+                    <span class="badge badge-ml">CrewAI</span>
+                    <span class="badge badge-tool">Pytest</span>
+                </div>
+
+                <a
+                    href="https://github.com/gurjeetkaur0005/portfolio-intelligence-platform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-link"
+                >
+                    <svg class="icon-sm">
+                        <use href="#i-github"></use>
+                    </svg>
+                    View repository
+                </a>
+            </article>
+
+            <!-- PROJECT 2 -->
+            <article class="mini-card">
+                <span class="feature-tag tag-ml">
+                    <svg class="icon-sm">
+                        <use href="#i-cpu"></use>
+                    </svg>
+                    ML &middot; SCALING LAWS
+                </span>
+
+                <h4>Scaling Laws in Symbolic Music Modeling</h4>
+
+                <p>
+                    Trained Transformer and LSTM models across different
+                    parameter counts to study scaling behavior in symbolic
+                    music generation.
+                </p>
+
+                <ul class="project-highlights">
+                    <li>Model sweep from approximately 3M to 100M+ parameters</li>
+                    <li>143M-token corpus derived from 178K MIDI files</li>
+                    <li>Systematic tuning across multiple architectures</li>
+                </ul>
+
+                <div class="metric-row metric-row-tight">
+                    <div>
+                        <span class="metric-num">2.22</span>
+                        <span class="metric-label">test loss</span>
+                    </div>
+
+                    <div>
+                        <span class="metric-num">9.20</span>
+                        <span class="metric-label">perplexity</span>
+                    </div>
+                </div>
+
+                <div class="badge-row badge-row-tight">
+                    <span class="badge badge-lang">Python</span>
+                    <span class="badge badge-ml">PyTorch</span>
+                    <span class="badge badge-ml">Transformers</span>
+                    <span class="badge badge-ml">LSTM</span>
+                </div>
+
+                <a
+                    href="https://github.com/gurjeetkaur0005/music_scaling_laws"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-link"
+                >
+                    <svg class="icon-sm">
+                        <use href="#i-github"></use>
+                    </svg>
+                    View repository
+                </a>
+            </article>
+
+            <!-- PROJECT 3 -->
+            <article class="mini-card">
+                <span class="feature-tag tag-cloud">
+                    <svg class="icon-sm">
+                        <use href="#i-cloud"></use>
+                    </svg>
+                    CLOUD
+                </span>
+
                 <h4>Smart Photo Search</h4>
-                <p>Serverless natural-language image search on AWS with an event-driven indexing pipeline.</p>
+
+                <p>
+                    Serverless natural-language image search on AWS with an
+                    event-driven indexing pipeline.
+                </p>
+
+                <ul class="project-highlights">
+                    <li>Automatic image indexing using AWS Rekognition</li>
+                    <li>Natural-language search through OpenSearch</li>
+                    <li>Event-driven processing with S3 and Lambda</li>
+                </ul>
+
                 <div class="badge-row badge-row-tight">
-                    <span class="badge badge-cloud">S3</span><span class="badge badge-cloud">Lambda</span><span class="badge badge-cloud">Rekognition</span><span class="badge badge-cloud">OpenSearch</span>
+                    <span class="badge badge-cloud">S3</span>
+                    <span class="badge badge-cloud">Lambda</span>
+                    <span class="badge badge-cloud">Rekognition</span>
+                    <span class="badge badge-cloud">OpenSearch</span>
                 </div>
-                <a href="https://github.com/gurjeetkaur0005/smart-photo-search-aws" target="_blank" rel="noopener noreferrer" class="text-link">View repository &rarr;</a>
+
+                <a
+                    href="https://github.com/gurjeetkaur0005/smart-photo-search-aws"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-link"
+                >
+                    <svg class="icon-sm">
+                        <use href="#i-github"></use>
+                    </svg>
+                    View repository
+                </a>
             </article>
 
+            <!-- PROJECT 4 -->
             <article class="mini-card">
-                <span class="feature-tag tag-cloud"><svg class="icon-sm"><use href="#i-cloud"/></svg>CLOUD</span>
+                <span class="feature-tag tag-cloud">
+                    <svg class="icon-sm">
+                        <use href="#i-cloud"></use>
+                    </svg>
+                    CLOUD
+                </span>
+
                 <h4>Dining Concierge Chatbot</h4>
-                <p>Serverless conversational chatbot for restaurant recommendations with async SQS/SES notifications.</p>
+
+                <p>
+                    Serverless conversational chatbot for restaurant
+                    recommendations with asynchronous notifications.
+                </p>
+
+                <ul class="project-highlights">
+                    <li>Conversational interface built with Amazon Lex</li>
+                    <li>Restaurant data stored in DynamoDB and OpenSearch</li>
+                    <li>Asynchronous SQS and SES notification workflow</li>
+                </ul>
+
                 <div class="badge-row badge-row-tight">
-                    <span class="badge badge-cloud">Lambda</span><span class="badge badge-cloud">Lex</span><span class="badge badge-cloud">DynamoDB</span><span class="badge badge-cloud">SQS</span>
+                    <span class="badge badge-cloud">Lambda</span>
+                    <span class="badge badge-cloud">Lex</span>
+                    <span class="badge badge-cloud">DynamoDB</span>
+                    <span class="badge badge-cloud">SQS</span>
                 </div>
-                <a href="https://github.com/gurjeetkaur0005/dining-chatbot" target="_blank" rel="noopener noreferrer" class="text-link">View repository &rarr;</a>
+
+                <a
+                    href="https://github.com/gurjeetkaur0005/dining-chatbot"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-link"
+                >
+                    <svg class="icon-sm">
+                        <use href="#i-github"></use>
+                    </svg>
+                    View repository
+                </a>
             </article>
 
+            <!-- PROJECT 5 -->
             <article class="mini-card">
-                <span class="feature-tag tag-data"><svg class="icon-sm"><use href="#i-bar"/></svg>DATA / VIZ</span>
+                <span class="feature-tag tag-data">
+                    <svg class="icon-sm">
+                        <use href="#i-bar"></use>
+                    </svg>
+                    DATA &middot; VISUALIZATION
+                </span>
+
                 <h4>How NYC Feels</h4>
-                <p>Interactive urban analytics across 190+ NYC Neighborhood Tabulation Areas.</p>
+
+                <p>
+                    Interactive urban analytics across more than 190 New York
+                    City Neighborhood Tabulation Areas.
+                </p>
+
+                <ul class="project-highlights">
+                    <li>Interactive geographic and neighborhood analysis</li>
+                    <li>Six coordinated visualizations built with D3.js</li>
+                    <li>Exploration across more than 190 NYC areas</li>
+                </ul>
+
                 <div class="metric-row metric-row-tight">
-                    <div><span class="metric-num">190+</span><span class="metric-label">NTAs</span></div>
-                    <div><span class="metric-num">6</span><span class="metric-label">D3 visuals</span></div>
+                    <div>
+                        <span class="metric-num">190+</span>
+                        <span class="metric-label">NTAs</span>
+                    </div>
+
+                    <div>
+                        <span class="metric-num">6</span>
+                        <span class="metric-label">D3 visuals</span>
+                    </div>
                 </div>
+
                 <div class="badge-row badge-row-tight">
-                    <span class="badge badge-lang">JavaScript</span><span class="badge badge-data">D3.js</span>
+                    <span class="badge badge-lang">JavaScript</span>
+                    <span class="badge badge-data">D3.js</span>
+                    <span class="badge badge-data">Observable</span>
                 </div>
             </article>
 
+            <!-- PROJECT 6 -->
             <article class="mini-card">
-                <span class="feature-tag tag-cloud"><svg class="icon-sm"><use href="#i-terminal"/></svg>CLOUD / DEVOPS</span>
+                <span class="feature-tag tag-cloud">
+                    <svg class="icon-sm">
+                        <use href="#i-terminal"></use>
+                    </svg>
+                    CLOUD &middot; DEVOPS
+                </span>
+
                 <h4>To-Do App Deployment</h4>
-                <p>Containerized Flask + MongoDB app deployed to Kubernetes and AWS EKS with rolling updates.</p>
+
+                <p>
+                    Containerized Flask and MongoDB application deployed to
+                    Kubernetes and AWS EKS.
+                </p>
+
+                <ul class="project-highlights">
+                    <li>Containerized application using Docker</li>
+                    <li>Deployed and scaled through Kubernetes and EKS</li>
+                    <li>Added monitoring and rolling-update support</li>
+                </ul>
+
                 <div class="badge-row badge-row-tight">
-                    <span class="badge badge-lang">Flask</span><span class="badge badge-cloud">Kubernetes</span><span class="badge badge-cloud">EKS</span>
+                    <span class="badge badge-lang">Flask</span>
+                    <span class="badge badge-cloud">Docker</span>
+                    <span class="badge badge-cloud">Kubernetes</span>
+                    <span class="badge badge-cloud">EKS</span>
                 </div>
             </article>
 
+            <!-- PROJECT 7 -->
             <article class="mini-card">
-                <span class="feature-tag tag-data"><svg class="icon-sm"><use href="#i-trend"/></svg>DATA</span>
+                <span class="feature-tag tag-data">
+                    <svg class="icon-sm">
+                        <use href="#i-trend"></use>
+                    </svg>
+                    DATA
+                </span>
+
                 <h4>Retail Market Basket Analysis</h4>
-                <p>FP-Growth association-rule mining over large-scale retail transaction data.</p>
+
+                <p>
+                    FP-Growth association-rule mining over large-scale retail
+                    transaction data.
+                </p>
+
+                <ul class="project-highlights">
+                    <li>Processed more than 1.1 million transactions</li>
+                    <li>Generated over 240 association rules</li>
+                    <li>Identified frequently purchased product combinations</li>
+                </ul>
+
                 <div class="metric-row metric-row-tight">
-                    <div><span class="metric-num">1.1M+</span><span class="metric-label">transactions</span></div>
-                    <div><span class="metric-num">240+</span><span class="metric-label">rules</span></div>
+                    <div>
+                        <span class="metric-num">1.1M+</span>
+                        <span class="metric-label">transactions</span>
+                    </div>
+
+                    <div>
+                        <span class="metric-num">240+</span>
+                        <span class="metric-label">rules</span>
+                    </div>
                 </div>
-                <a href="https://github.com/gurjeetkaur0005/fp-growth-online-retail" target="_blank" rel="noopener noreferrer" class="text-link">View repository &rarr;</a>
+
+                <div class="badge-row badge-row-tight">
+                    <span class="badge badge-lang">Python</span>
+                    <span class="badge badge-data">FP-Growth</span>
+                    <span class="badge badge-data">Data Mining</span>
+                </div>
+
+                <a
+                    href="https://github.com/gurjeetkaur0005/fp-growth-online-retail"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-link"
+                >
+                    <svg class="icon-sm">
+                        <use href="#i-github"></use>
+                    </svg>
+                    View repository
+                </a>
             </article>
 
+            <!-- PROJECT 8 -->
             <article class="mini-card">
-                <span class="feature-tag tag-opt"><svg class="icon-sm"><use href="#i-layers"/></svg>OPT / RESEARCH</span>
+                <span class="feature-tag tag-opt">
+                    <svg class="icon-sm">
+                        <use href="#i-layers"></use>
+                    </svg>
+                    OPT &middot; RESEARCH
+                </span>
+
                 <h4>Bilevel Integer Quadratic Programming</h4>
-                <p>Generalized MATLAB algorithm for bilevel integer quadratic programs, applied to transportation and energy optimization.</p>
+
+                <p>
+                    Generalized MATLAB algorithm for bilevel integer quadratic
+                    programs applied to transportation and energy optimization.
+                </p>
+
+                <ul class="project-highlights">
+                    <li>Designed a generalized mathematical solution method</li>
+                    <li>Implemented the algorithm using MATLAB</li>
+                    <li>Evaluated transportation and energy applications</li>
+                </ul>
+
                 <div class="badge-row badge-row-tight">
-                    <span class="badge badge-lang">MATLAB</span><span class="badge badge-opt">Optimization</span>
+                    <span class="badge badge-lang">MATLAB</span>
+                    <span class="badge badge-opt">Optimization</span>
+                    <span class="badge badge-opt">Research</span>
                 </div>
-                <a href="GurjeetKaur_Dissertation.pdf" target="_blank" rel="noopener noreferrer" class="text-link">View dissertation &rarr;</a>
+
+                <a
+                    href="GurjeetKaur_Dissertation.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-link"
+                >
+                    View dissertation &rarr;
+                </a>
             </article>
 
         </div>
     </div>
 </section>
-
 <div class="divider"></div>
 
 <!-- SKILLS -->
