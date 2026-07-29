@@ -851,3 +851,65 @@ h1, h2, h3, h4 { margin: 0; color: var(--text); font-weight: 700; letter-spacing
     .reveal { opacity: 1; transform: none; transition: none; }
     .btn, .feature-illustration { transition: none; }
 }
+
+/* =================================
+   FINAL PROJECT SPACING FIX
+   Keep bullets directly below description
+================================= */
+
+.mini-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: stretch;
+}
+
+/* Description must not stretch */
+.mini-card > p {
+    flex: 0 0 auto !important;
+    flex-grow: 0 !important;
+    min-height: 0 !important;
+
+    margin: 0 0 10px !important;
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    line-height: 1.65;
+}
+
+/* Bullet list starts immediately after description */
+.mini-card .project-highlights {
+    flex: 0 0 auto !important;
+    margin: 0 0 var(--sp-3) !important;
+    padding-left: 20px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.mini-card .project-highlights li {
+    margin: 0 0 5px;
+    padding-left: 2px;
+}
+
+.mini-card .project-highlights li:last-child {
+    margin-bottom: 0;
+}
+
+.mini-card .project-highlights li::marker {
+    color: var(--cyan);
+}
+
+/* Do not push badges or links with auto margins */
+.mini-card .metric-row,
+.mini-card .badge-row,
+.mini-card .text-link {
+    flex: 0 0 auto;
+}
+
+.mini-card .badge-row {
+    margin-top: 0 !important;
+}
+
+.mini-card .text-link {
+    margin-top: var(--sp-2) !important;
+}
