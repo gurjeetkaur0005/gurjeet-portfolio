@@ -113,162 +113,146 @@
 <section class="section section-alt" id="projects">
     <div class="wrap">
         <p class="section-label">02 &mdash; Selected Work</p>
-
         <h2 class="section-title">
             Things I've built
             <span class="rule rule-cyan"></span>
         </h2>
 
+        <!-- FEATURED PAIR -->
+        <div class="feature-pair">
+
+            <!-- FEATURE 1 -->
+            <article class="feature-project">
+                <div class="feature-media">
+                    <svg class="feature-illustration" viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="70" r="4" fill="var(--primary)"/>
+                        <path d="M100 70 L60 40 M100 70 L140 40 M100 70 L60 100 M100 70 L140 100" stroke="var(--border-strong)" stroke-width="1"/>
+                        <circle cx="60" cy="40" r="12" fill="none" stroke="var(--primary)" stroke-width="1.5"/>
+                        <circle cx="140" cy="40" r="12" fill="none" stroke="var(--secondary)" stroke-width="1.5"/>
+                        <circle cx="60" cy="100" r="12" fill="none" stroke="var(--cyan)" stroke-width="1.5"/>
+                        <circle cx="140" cy="100" r="12" fill="none" stroke="var(--emerald)" stroke-width="1.5"/>
+                        <path d="M20 70 L180 70" stroke="var(--border)" stroke-width="1" stroke-dasharray="3 3"/>
+                    </svg>
+                </div>
+                <div class="feature-content">
+                    <span class="feature-tag tag-opt">
+                        <svg class="icon-sm"><use href="#i-layers"></use></svg>
+                        OPT &middot; AGENTIC AI
+                    </span>
+                    <h3>Agentic Portfolio Rebalancing Platform</h3>
+                    <p>Multi-agent system that watches portfolio drift, solves for tax-aware trades under real constraints, and explains every decision it makes — to the client, the advisor, and compliance.</p>
+                    <ul class="feature-highlights">
+                        <li>CrewAI agents for analysis, risk, tax, and explanation</li>
+                        <li>Constraint-based optimization via CVXPY</li>
+                        <li>Human-approval gate and full audit trail</li>
+                    </ul>
+                    <div class="badge-row">
+                        <span class="badge badge-lang">Python</span>
+                        <span class="badge badge-data">Pandas</span>
+                        <span class="badge badge-data">NumPy</span>
+                        <span class="badge badge-opt">CVXPY</span>
+                        <span class="badge badge-ml">LangChain</span>
+                        <span class="badge badge-ml">CrewAI</span>
+                        <span class="badge badge-tool">Pytest</span>
+                    </div>
+                    <a href="https://github.com/gurjeetkaur0005/portfolio-intelligence-platform" target="_blank" rel="noopener noreferrer" class="text-link">
+                        <svg class="icon-sm"><use href="#i-github"></use></svg>
+                        View repository
+                    </a>
+                </div>
+            </article>
+
+            <!-- FEATURE 2 -->
+            <article class="feature-project">
+                <div class="feature-media">
+                    <svg class="feature-illustration" viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
+                        <polyline points="20,110 50,95 80,60 110,75 140,30 170,45" fill="none" stroke="var(--secondary)" stroke-width="2"/>
+                        <polyline points="20,120 50,115 80,100 110,95 140,70 170,68" fill="none" stroke="var(--border-strong)" stroke-width="1.5" stroke-dasharray="4 3"/>
+                        <circle cx="140" cy="30" r="3" fill="var(--secondary)"/>
+                    </svg>
+                </div>
+                <div class="feature-content">
+                    <span class="feature-tag tag-ml">
+                        <svg class="icon-sm"><use href="#i-cpu"></use></svg>
+                        ML &middot; SCALING LAWS
+                    </span>
+                    <h3>Scaling Laws in Symbolic Music Modeling</h3>
+                    <p>Swept Transformer and LSTM architectures from ~3M to 100M+ parameters to trace how model scale governs quality in symbolic music generation.</p>
+                    <ul class="feature-highlights">
+                        <li>143M-token corpus derived from 178K MIDI files</li>
+                        <li>Systematic tuning across architecture families</li>
+                    </ul>
+                    <div class="metric-row">
+                        <div><span class="metric-num">2.22</span><span class="metric-label">test loss</span></div>
+                        <div><span class="metric-num">9.20</span><span class="metric-label">perplexity</span></div>
+                    </div>
+                    <div class="badge-row">
+                        <span class="badge badge-lang">Python</span>
+                        <span class="badge badge-ml">PyTorch</span>
+                        <span class="badge badge-ml">Transformers</span>
+                        <span class="badge badge-ml">LSTM</span>
+                    </div>
+                    <a href="https://github.com/gurjeetkaur0005/music_scaling_laws" target="_blank" rel="noopener noreferrer" class="text-link">
+                        <svg class="icon-sm"><use href="#i-github"></use></svg>
+                        View repository
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- COMPACT GRID -->
         <div class="mini-grid">
 
-            <!-- PROJECT 1 -->
-            <article class="mini-card card-featured">
-                <span class="feature-tag tag-opt">
-                    <svg class="icon-sm"><use href="#i-layers"></use></svg>
-                    OPT &middot; AGENTIC AI
-                </span>
-
-                <h4>Agentic Portfolio Rebalancing Platform</h4>
-
-                <p>Multi-agent system that watches portfolio drift, solves for tax-aware trades under real constraints, and explains every decision it makes — to the client, the advisor, and compliance.</p>
-
-                <ul class="project-highlights">
-                    <li>CrewAI agents for analysis, risk, tax, and explanation</li>
-                    <li>Constraint-based optimization via CVXPY</li>
-                    <li>Human-approval gate and full audit trail</li>
-                </ul>
-
-                <div class="badge-row badge-row-tight">
-                    <span class="badge badge-lang">Python</span>
-                    <span class="badge badge-data">Pandas</span>
-                    <span class="badge badge-data">NumPy</span>
-                    <span class="badge badge-opt">CVXPY</span>
-                    <span class="badge badge-ml">LangChain</span>
-                    <span class="badge badge-ml">CrewAI</span>
-                    <span class="badge badge-tool">Pytest</span>
-                </div>
-
-                <a href="https://github.com/gurjeetkaur0005/portfolio-intelligence-platform" target="_blank" rel="noopener noreferrer" class="text-link">
-                    <svg class="icon-sm"><use href="#i-github"></use></svg>
-                    View repository
-                </a>
-            </article>
-
-            <!-- PROJECT 2 -->
-            <article class="mini-card">
-                <span class="feature-tag tag-ml">
-                    <svg class="icon-sm"><use href="#i-cpu"></use></svg>
-                    ML &middot; SCALING LAWS
-                </span>
-
-                <h4>Scaling Laws in Symbolic Music Modeling</h4>
-
-                <p>Swept Transformer and LSTM architectures from ~3M to 100M+ parameters to trace how model scale governs quality in symbolic music generation.</p>
-
-                <ul class="project-highlights">
-                    <li>143M-token corpus derived from 178K MIDI files</li>
-                    <li>Systematic tuning across architecture families</li>
-                </ul>
-
-                <div class="metric-row metric-row-tight">
-                    <div><span class="metric-num">2.22</span><span class="metric-label">test loss</span></div>
-                    <div><span class="metric-num">9.20</span><span class="metric-label">perplexity</span></div>
-                </div>
-
-                <div class="badge-row badge-row-tight">
-                    <span class="badge badge-lang">Python</span>
-                    <span class="badge badge-ml">PyTorch</span>
-                    <span class="badge badge-ml">Transformers</span>
-                    <span class="badge badge-ml">LSTM</span>
-                </div>
-
-                <a href="https://github.com/gurjeetkaur0005/music_scaling_laws" target="_blank" rel="noopener noreferrer" class="text-link">
-                    <svg class="icon-sm"><use href="#i-github"></use></svg>
-                    View repository
-                </a>
-            </article>
-
-            <!-- PROJECT 3 -->
             <article class="mini-card">
                 <span class="feature-tag tag-cloud">
                     <svg class="icon-sm"><use href="#i-cloud"></use></svg>
                     CLOUD
                 </span>
-
                 <h4>Smart Photo Search</h4>
-
                 <p>Serverless natural-language image search — snap a photo into S3 and it's searchable by description within seconds, no manual tagging.</p>
-
-                <ul class="project-highlights">
-                    <li>Auto-indexing on upload via AWS Rekognition</li>
-                    <li>Natural-language query through OpenSearch</li>
-                    <li>Fully event-driven: S3 &rarr; Lambda &rarr; index</li>
-                </ul>
-
                 <div class="badge-row badge-row-tight">
                     <span class="badge badge-cloud">S3</span>
                     <span class="badge badge-cloud">Lambda</span>
                     <span class="badge badge-cloud">Rekognition</span>
                     <span class="badge badge-cloud">OpenSearch</span>
                 </div>
-
                 <a href="https://github.com/gurjeetkaur0005/smart-photo-search-aws" target="_blank" rel="noopener noreferrer" class="text-link">
                     <svg class="icon-sm"><use href="#i-github"></use></svg>
                     View repository
                 </a>
             </article>
 
-            <!-- PROJECT 4 -->
             <article class="mini-card">
                 <span class="feature-tag tag-cloud">
                     <svg class="icon-sm"><use href="#i-cloud"></use></svg>
                     CLOUD
                 </span>
-
                 <h4>Dining Concierge Chatbot</h4>
-
                 <p>Conversational restaurant concierge, fully serverless — a text exchange in, a curated recommendation out by SMS a few minutes later.</p>
-
-                <ul class="project-highlights">
-                    <li>Natural-language conversation via Amazon Lex</li>
-                    <li>Restaurant data in DynamoDB, ranked via OpenSearch</li>
-                    <li>Async fan-out with SQS and SES</li>
-                </ul>
-
                 <div class="badge-row badge-row-tight">
                     <span class="badge badge-cloud">Lambda</span>
                     <span class="badge badge-cloud">Lex</span>
                     <span class="badge badge-cloud">DynamoDB</span>
                     <span class="badge badge-cloud">SQS</span>
                 </div>
-
                 <a href="https://github.com/gurjeetkaur0005/dining-chatbot" target="_blank" rel="noopener noreferrer" class="text-link">
                     <svg class="icon-sm"><use href="#i-github"></use></svg>
                     View repository
                 </a>
             </article>
 
-            <!-- PROJECT 5 -->
             <article class="mini-card">
                 <span class="feature-tag tag-data">
                     <svg class="icon-sm"><use href="#i-bar"></use></svg>
                     DATA &middot; VISUALIZATION
                 </span>
-
                 <h4>How NYC Feels</h4>
-
                 <p>Six coordinated views into the emotional and demographic texture of New York, built neighborhood by neighborhood.</p>
-
-                <ul class="project-highlights">
-                    <li>190+ Neighborhood Tabulation Areas mapped</li>
-                    <li>Six linked D3.js visualizations, one dataset</li>
-                </ul>
-
                 <div class="metric-row metric-row-tight">
                     <div><span class="metric-num">190+</span><span class="metric-label">NTAs</span></div>
                     <div><span class="metric-num">6</span><span class="metric-label">D3 visuals</span></div>
                 </div>
-
                 <div class="badge-row badge-row-tight">
                     <span class="badge badge-lang">JavaScript</span>
                     <span class="badge badge-data">D3.js</span>
@@ -276,22 +260,13 @@
                 </div>
             </article>
 
-            <!-- PROJECT 6 -->
             <article class="mini-card">
                 <span class="feature-tag tag-cloud">
                     <svg class="icon-sm"><use href="#i-terminal"></use></svg>
                     CLOUD &middot; DEVOPS
                 </span>
-
                 <h4>To-Do App Deployment</h4>
-
                 <p>Took a Flask + MongoDB app from a laptop to a rolling, autoscaling deployment on AWS.</p>
-
-                <ul class="project-highlights">
-                    <li>Containerized with Docker, orchestrated via Kubernetes</li>
-                    <li>Deployed to EKS with rolling updates and monitoring</li>
-                </ul>
-
                 <div class="badge-row badge-row-tight">
                     <span class="badge badge-lang">Flask</span>
                     <span class="badge badge-cloud">Docker</span>
@@ -300,61 +275,40 @@
                 </div>
             </article>
 
-            <!-- PROJECT 7 -->
             <article class="mini-card">
                 <span class="feature-tag tag-data">
                     <svg class="icon-sm"><use href="#i-trend"></use></svg>
                     DATA
                 </span>
-
                 <h4>Retail Market Basket Analysis</h4>
-
                 <p>Mined 1.1M+ retail transactions for the product pairings that actually drive baskets, not the obvious ones.</p>
-
-                <ul class="project-highlights">
-                    <li>FP-Growth association-rule mining at scale</li>
-                    <li>240+ rules surfaced, ranked by lift and confidence</li>
-                </ul>
-
                 <div class="metric-row metric-row-tight">
                     <div><span class="metric-num">1.1M+</span><span class="metric-label">transactions</span></div>
                     <div><span class="metric-num">240+</span><span class="metric-label">rules</span></div>
                 </div>
-
                 <div class="badge-row badge-row-tight">
                     <span class="badge badge-lang">Python</span>
                     <span class="badge badge-data">FP-Growth</span>
                     <span class="badge badge-data">Data Mining</span>
                 </div>
-
                 <a href="https://github.com/gurjeetkaur0005/fp-growth-online-retail" target="_blank" rel="noopener noreferrer" class="text-link">
                     <svg class="icon-sm"><use href="#i-github"></use></svg>
                     View repository
                 </a>
             </article>
 
-            <!-- PROJECT 8 -->
             <article class="mini-card">
                 <span class="feature-tag tag-opt">
                     <svg class="icon-sm"><use href="#i-layers"></use></svg>
                     OPT &middot; RESEARCH
                 </span>
-
                 <h4>Bilevel Integer Quadratic Programming</h4>
-
                 <p>Master's thesis: a generalized solution method for bilevel integer quadratic programs, tested against transportation and energy scheduling problems.</p>
-
-                <ul class="project-highlights">
-                    <li>Original algorithm design and MATLAB implementation</li>
-                    <li>Validated on transportation and energy applications</li>
-                </ul>
-
                 <div class="badge-row badge-row-tight">
                     <span class="badge badge-lang">MATLAB</span>
                     <span class="badge badge-opt">Optimization</span>
                     <span class="badge badge-opt">Research</span>
                 </div>
-
                 <a href="GurjeetKaur_Dissertation.pdf" target="_blank" rel="noopener noreferrer" class="text-link">
                     View dissertation &rarr;
                 </a>
