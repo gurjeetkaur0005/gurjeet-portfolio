@@ -478,8 +478,24 @@ h1, h2, h3, h4 { margin: 0; color: var(--text); font-weight: 700; letter-spacing
 .feature-content h3 { font-size: 1.2rem; margin: var(--sp-1) 0 var(--sp-2) 0; }
 .feature-content > p { color: var(--text-secondary); margin: 0 0 var(--sp-2) 0; }
 
-.feature-highlights { margin: 0 0 var(--sp-3) 0; padding-left: 18px; color: var(--text-secondary); font-size: 0.9rem; }
-.feature-highlights li { margin-bottom: 5px; }
+.feature-highlights {
+    margin: 0 0 var(--sp-3);
+    padding-left: 1rem;        /* was 18px */
+    list-style-position: outside;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.feature-highlights li {
+    margin-bottom: 6px;
+    padding-left: 0;           /* remove extra gap */
+}
+
+.feature-highlights li::marker {
+    color: var(--cyan);
+    font-size: 0.8rem;
+}
 
 .metric-row { display: flex; gap: var(--sp-4); margin-bottom: var(--sp-3); }
 .metric-row-tight { gap: var(--sp-3); margin-bottom: var(--sp-2); }
