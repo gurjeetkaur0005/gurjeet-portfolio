@@ -119,32 +119,23 @@
             <span class="rule rule-cyan"></span>
         </h2>
 
-        <!-- ALL PROJECTS USE THE SAME CARD FORMAT -->
         <div class="mini-grid">
 
             <!-- PROJECT 1 -->
-            <article class="mini-card">
+            <article class="mini-card card-featured">
                 <span class="feature-tag tag-opt">
-                    <svg class="icon-sm">
-                        <use href="#i-layers"></use>
-                    </svg>
+                    <svg class="icon-sm"><use href="#i-layers"></use></svg>
                     OPT &middot; AGENTIC AI
                 </span>
 
-                <h4>
-                    Agentic AI Autonomous Portfolio Rebalancing Platform
-                </h4>
+                <h4>Agentic Portfolio Rebalancing Platform</h4>
 
-                <p>
-                    AI-powered platform that automates portfolio drift
-                    monitoring, tax-aware trade optimization, and explainable
-                    rebalancing decisions.
-                </p>
+                <p>Multi-agent system that watches portfolio drift, solves for tax-aware trades under real constraints, and explains every decision it makes — to the client, the advisor, and compliance.</p>
 
                 <ul class="project-highlights">
-                    <li>Constraint-based optimization for tax-aware trades</li>
-                    <li>Human-approval and compliance explanation workflow</li>
-                    <li>Audit logging across the rebalancing pipeline</li>
+                    <li>CrewAI agents for analysis, risk, tax, and explanation</li>
+                    <li>Constraint-based optimization via CVXPY</li>
+                    <li>Human-approval gate and full audit trail</li>
                 </ul>
 
                 <div class="badge-row badge-row-tight">
@@ -157,15 +148,8 @@
                     <span class="badge badge-tool">Pytest</span>
                 </div>
 
-                <a
-                    href="https://github.com/gurjeetkaur0005/portfolio-intelligence-platform"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-link"
-                >
-                    <svg class="icon-sm">
-                        <use href="#i-github"></use>
-                    </svg>
+                <a href="https://github.com/gurjeetkaur0005/portfolio-intelligence-platform" target="_blank" rel="noopener noreferrer" class="text-link">
+                    <svg class="icon-sm"><use href="#i-github"></use></svg>
                     View repository
                 </a>
             </article>
@@ -173,36 +157,22 @@
             <!-- PROJECT 2 -->
             <article class="mini-card">
                 <span class="feature-tag tag-ml">
-                    <svg class="icon-sm">
-                        <use href="#i-cpu"></use>
-                    </svg>
+                    <svg class="icon-sm"><use href="#i-cpu"></use></svg>
                     ML &middot; SCALING LAWS
                 </span>
 
                 <h4>Scaling Laws in Symbolic Music Modeling</h4>
 
-                <p>
-                    Trained Transformer and LSTM models across different
-                    parameter counts to study scaling behavior in symbolic
-                    music generation.
-                </p>
+                <p>Swept Transformer and LSTM architectures from ~3M to 100M+ parameters to trace how model scale governs quality in symbolic music generation.</p>
 
                 <ul class="project-highlights">
-                    <li>Model sweep from approximately 3M to 100M+ parameters</li>
                     <li>143M-token corpus derived from 178K MIDI files</li>
-                    <li>Systematic tuning across multiple architectures</li>
+                    <li>Systematic tuning across architecture families</li>
                 </ul>
 
                 <div class="metric-row metric-row-tight">
-                    <div>
-                        <span class="metric-num">2.22</span>
-                        <span class="metric-label">test loss</span>
-                    </div>
-
-                    <div>
-                        <span class="metric-num">9.20</span>
-                        <span class="metric-label">perplexity</span>
-                    </div>
+                    <div><span class="metric-num">2.22</span><span class="metric-label">test loss</span></div>
+                    <div><span class="metric-num">9.20</span><span class="metric-label">perplexity</span></div>
                 </div>
 
                 <div class="badge-row badge-row-tight">
@@ -212,15 +182,8 @@
                     <span class="badge badge-ml">LSTM</span>
                 </div>
 
-                <a
-                    href="https://github.com/gurjeetkaur0005/music_scaling_laws"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-link"
-                >
-                    <svg class="icon-sm">
-                        <use href="#i-github"></use>
-                    </svg>
+                <a href="https://github.com/gurjeetkaur0005/music_scaling_laws" target="_blank" rel="noopener noreferrer" class="text-link">
+                    <svg class="icon-sm"><use href="#i-github"></use></svg>
                     View repository
                 </a>
             </article>
@@ -228,23 +191,18 @@
             <!-- PROJECT 3 -->
             <article class="mini-card">
                 <span class="feature-tag tag-cloud">
-                    <svg class="icon-sm">
-                        <use href="#i-cloud"></use>
-                    </svg>
+                    <svg class="icon-sm"><use href="#i-cloud"></use></svg>
                     CLOUD
                 </span>
 
                 <h4>Smart Photo Search</h4>
 
-                <p>
-                    Serverless natural-language image search on AWS with an
-                    event-driven indexing pipeline.
-                </p>
+                <p>Serverless natural-language image search — snap a photo into S3 and it's searchable by description within seconds, no manual tagging.</p>
 
                 <ul class="project-highlights">
-                    <li>Automatic image indexing using AWS Rekognition</li>
-                    <li>Natural-language search through OpenSearch</li>
-                    <li>Event-driven processing with S3 and Lambda</li>
+                    <li>Auto-indexing on upload via AWS Rekognition</li>
+                    <li>Natural-language query through OpenSearch</li>
+                    <li>Fully event-driven: S3 &rarr; Lambda &rarr; index</li>
                 </ul>
 
                 <div class="badge-row badge-row-tight">
@@ -254,15 +212,8 @@
                     <span class="badge badge-cloud">OpenSearch</span>
                 </div>
 
-                <a
-                    href="https://github.com/gurjeetkaur0005/smart-photo-search-aws"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-link"
-                >
-                    <svg class="icon-sm">
-                        <use href="#i-github"></use>
-                    </svg>
+                <a href="https://github.com/gurjeetkaur0005/smart-photo-search-aws" target="_blank" rel="noopener noreferrer" class="text-link">
+                    <svg class="icon-sm"><use href="#i-github"></use></svg>
                     View repository
                 </a>
             </article>
@@ -270,23 +221,18 @@
             <!-- PROJECT 4 -->
             <article class="mini-card">
                 <span class="feature-tag tag-cloud">
-                    <svg class="icon-sm">
-                        <use href="#i-cloud"></use>
-                    </svg>
+                    <svg class="icon-sm"><use href="#i-cloud"></use></svg>
                     CLOUD
                 </span>
 
                 <h4>Dining Concierge Chatbot</h4>
 
-                <p>
-                    Serverless conversational chatbot for restaurant
-                    recommendations with asynchronous notifications.
-                </p>
+                <p>Conversational restaurant concierge, fully serverless — a text exchange in, a curated recommendation out by SMS a few minutes later.</p>
 
                 <ul class="project-highlights">
-                    <li>Conversational interface built with Amazon Lex</li>
-                    <li>Restaurant data stored in DynamoDB and OpenSearch</li>
-                    <li>Asynchronous SQS and SES notification workflow</li>
+                    <li>Natural-language conversation via Amazon Lex</li>
+                    <li>Restaurant data in DynamoDB, ranked via OpenSearch</li>
+                    <li>Async fan-out with SQS and SES</li>
                 </ul>
 
                 <div class="badge-row badge-row-tight">
@@ -296,15 +242,8 @@
                     <span class="badge badge-cloud">SQS</span>
                 </div>
 
-                <a
-                    href="https://github.com/gurjeetkaur0005/dining-chatbot"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-link"
-                >
-                    <svg class="icon-sm">
-                        <use href="#i-github"></use>
-                    </svg>
+                <a href="https://github.com/gurjeetkaur0005/dining-chatbot" target="_blank" rel="noopener noreferrer" class="text-link">
+                    <svg class="icon-sm"><use href="#i-github"></use></svg>
                     View repository
                 </a>
             </article>
@@ -312,35 +251,22 @@
             <!-- PROJECT 5 -->
             <article class="mini-card">
                 <span class="feature-tag tag-data">
-                    <svg class="icon-sm">
-                        <use href="#i-bar"></use>
-                    </svg>
+                    <svg class="icon-sm"><use href="#i-bar"></use></svg>
                     DATA &middot; VISUALIZATION
                 </span>
 
                 <h4>How NYC Feels</h4>
 
-                <p>
-                    Interactive urban analytics across more than 190 New York
-                    City Neighborhood Tabulation Areas.
-                </p>
+                <p>Six coordinated views into the emotional and demographic texture of New York, built neighborhood by neighborhood.</p>
 
                 <ul class="project-highlights">
-                    <li>Interactive geographic and neighborhood analysis</li>
-                    <li>Six coordinated visualizations built with D3.js</li>
-                    <li>Exploration across more than 190 NYC areas</li>
+                    <li>190+ Neighborhood Tabulation Areas mapped</li>
+                    <li>Six linked D3.js visualizations, one dataset</li>
                 </ul>
 
                 <div class="metric-row metric-row-tight">
-                    <div>
-                        <span class="metric-num">190+</span>
-                        <span class="metric-label">NTAs</span>
-                    </div>
-
-                    <div>
-                        <span class="metric-num">6</span>
-                        <span class="metric-label">D3 visuals</span>
-                    </div>
+                    <div><span class="metric-num">190+</span><span class="metric-label">NTAs</span></div>
+                    <div><span class="metric-num">6</span><span class="metric-label">D3 visuals</span></div>
                 </div>
 
                 <div class="badge-row badge-row-tight">
@@ -353,23 +279,17 @@
             <!-- PROJECT 6 -->
             <article class="mini-card">
                 <span class="feature-tag tag-cloud">
-                    <svg class="icon-sm">
-                        <use href="#i-terminal"></use>
-                    </svg>
+                    <svg class="icon-sm"><use href="#i-terminal"></use></svg>
                     CLOUD &middot; DEVOPS
                 </span>
 
                 <h4>To-Do App Deployment</h4>
 
-                <p>
-                    Containerized Flask and MongoDB application deployed to
-                    Kubernetes and AWS EKS.
-                </p>
+                <p>Took a Flask + MongoDB app from a laptop to a rolling, autoscaling deployment on AWS.</p>
 
                 <ul class="project-highlights">
-                    <li>Containerized application using Docker</li>
-                    <li>Deployed and scaled through Kubernetes and EKS</li>
-                    <li>Added monitoring and rolling-update support</li>
+                    <li>Containerized with Docker, orchestrated via Kubernetes</li>
+                    <li>Deployed to EKS with rolling updates and monitoring</li>
                 </ul>
 
                 <div class="badge-row badge-row-tight">
@@ -383,35 +303,22 @@
             <!-- PROJECT 7 -->
             <article class="mini-card">
                 <span class="feature-tag tag-data">
-                    <svg class="icon-sm">
-                        <use href="#i-trend"></use>
-                    </svg>
+                    <svg class="icon-sm"><use href="#i-trend"></use></svg>
                     DATA
                 </span>
 
                 <h4>Retail Market Basket Analysis</h4>
 
-                <p>
-                    FP-Growth association-rule mining over large-scale retail
-                    transaction data.
-                </p>
+                <p>Mined 1.1M+ retail transactions for the product pairings that actually drive baskets, not the obvious ones.</p>
 
                 <ul class="project-highlights">
-                    <li>Processed more than 1.1 million transactions</li>
-                    <li>Generated over 240 association rules</li>
-                    <li>Identified frequently purchased product combinations</li>
+                    <li>FP-Growth association-rule mining at scale</li>
+                    <li>240+ rules surfaced, ranked by lift and confidence</li>
                 </ul>
 
                 <div class="metric-row metric-row-tight">
-                    <div>
-                        <span class="metric-num">1.1M+</span>
-                        <span class="metric-label">transactions</span>
-                    </div>
-
-                    <div>
-                        <span class="metric-num">240+</span>
-                        <span class="metric-label">rules</span>
-                    </div>
+                    <div><span class="metric-num">1.1M+</span><span class="metric-label">transactions</span></div>
+                    <div><span class="metric-num">240+</span><span class="metric-label">rules</span></div>
                 </div>
 
                 <div class="badge-row badge-row-tight">
@@ -420,15 +327,8 @@
                     <span class="badge badge-data">Data Mining</span>
                 </div>
 
-                <a
-                    href="https://github.com/gurjeetkaur0005/fp-growth-online-retail"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-link"
-                >
-                    <svg class="icon-sm">
-                        <use href="#i-github"></use>
-                    </svg>
+                <a href="https://github.com/gurjeetkaur0005/fp-growth-online-retail" target="_blank" rel="noopener noreferrer" class="text-link">
+                    <svg class="icon-sm"><use href="#i-github"></use></svg>
                     View repository
                 </a>
             </article>
@@ -436,23 +336,17 @@
             <!-- PROJECT 8 -->
             <article class="mini-card">
                 <span class="feature-tag tag-opt">
-                    <svg class="icon-sm">
-                        <use href="#i-layers"></use>
-                    </svg>
+                    <svg class="icon-sm"><use href="#i-layers"></use></svg>
                     OPT &middot; RESEARCH
                 </span>
 
                 <h4>Bilevel Integer Quadratic Programming</h4>
 
-                <p>
-                    Generalized MATLAB algorithm for bilevel integer quadratic
-                    programs applied to transportation and energy optimization.
-                </p>
+                <p>Master's thesis: a generalized solution method for bilevel integer quadratic programs, tested against transportation and energy scheduling problems.</p>
 
                 <ul class="project-highlights">
-                    <li>Designed a generalized mathematical solution method</li>
-                    <li>Implemented the algorithm using MATLAB</li>
-                    <li>Evaluated transportation and energy applications</li>
+                    <li>Original algorithm design and MATLAB implementation</li>
+                    <li>Validated on transportation and energy applications</li>
                 </ul>
 
                 <div class="badge-row badge-row-tight">
@@ -461,12 +355,7 @@
                     <span class="badge badge-opt">Research</span>
                 </div>
 
-                <a
-                    href="GurjeetKaur_Dissertation.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-link"
-                >
+                <a href="GurjeetKaur_Dissertation.pdf" target="_blank" rel="noopener noreferrer" class="text-link">
                     View dissertation &rarr;
                 </a>
             </article>
@@ -475,7 +364,6 @@
     </div>
 </section>
 <div class="divider"></div>
-
 <!-- SKILLS -->
 <section class="section" id="skills">
     <div class="wrap">
