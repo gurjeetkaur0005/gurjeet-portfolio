@@ -480,16 +480,12 @@ h1, h2, h3, h4 { margin: 0; color: var(--text); font-weight: 700; letter-spacing
 
 .feature-highlights {
     margin: 0 0 var(--sp-3);
-    padding-left: 1rem;        /* was 18px */
+    padding-left: 14px;
     list-style-position: outside;
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    line-height: 1.6;
 }
 
 .feature-highlights li {
     margin-bottom: 6px;
-    padding-left: 0;           /* remove extra gap */
 }
 
 .feature-highlights li::marker {
